@@ -5055,6 +5055,60 @@ summary(cox_3_adj)</code></pre>
 ## calving.sau   0.0377  1 0.8461
 ## calving.sslo  3.2923  1 0.0696
 ## GLOBAL       11.5058  3 0.0093</code></pre>
+<pre class="r"><code># Proportional hazards assumption not met
+
+cox_3_adj_stratified &lt;- coxph(survival~ sch.IMI.cow*ps_sample_3_to_6 + calving.sau+calving.sslo+cluster(Site), data=df_survival)</code></pre>
+<pre><code>## Warning in coxph.fit(X, Y, istrat, offset, init, control, weights = weights, :
+## Loglik converged before variable 2 ; coefficient may be infinite.</code></pre>
+<pre class="r"><code>summary(cox_3_adj_stratified)</code></pre>
+<pre><code>## Call:
+## coxph(formula = survival ~ sch.IMI.cow + ps_sample_3_to_6 + calving.sau + 
+##     calving.sslo + sch.IMI.cow:ps_sample_3_to_6, data = df_survival, 
+##     cluster = Site)
+## 
+##   n= 333, number of events= 178 
+## 
+##                                     coef  exp(coef)   se(coef)  robust se
+## sch.IMI.cow1                  -1.428e-01  8.669e-01  1.737e-01  1.293e-01
+## ps_sample_3_to_6              -2.153e+01  4.445e-10  2.156e+03  7.008e-01
+## calving.sau1                   5.461e-01  1.726e+00  1.723e-01  1.525e-01
+## calving.sslo1                  7.417e-01  2.100e+00  1.706e-01  9.965e-02
+## sch.IMI.cow1:ps_sample_3_to_6  9.522e-01  2.591e+00  3.808e-01  2.165e-01
+##                                     z Pr(&gt;|z|)    
+## sch.IMI.cow1                   -1.105 0.269187    
+## ps_sample_3_to_6              -30.726  &lt; 2e-16 ***
+## calving.sau1                    3.581 0.000342 ***
+## calving.sslo1                   7.443 9.83e-14 ***
+## sch.IMI.cow1:ps_sample_3_to_6   4.399 1.09e-05 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+##                               exp(coef) exp(-coef) lower .95 upper .95
+## sch.IMI.cow1                  8.669e-01  1.154e+00 6.729e-01 1.117e+00
+## ps_sample_3_to_6              4.445e-10  2.250e+09 1.125e-10 1.756e-09
+## calving.sau1                  1.726e+00  5.792e-01 1.280e+00 2.328e+00
+## calving.sslo1                 2.100e+00  4.763e-01 1.727e+00 2.552e+00
+## sch.IMI.cow1:ps_sample_3_to_6 2.591e+00  3.859e-01 1.695e+00 3.961e+00
+## 
+## Concordance= 0.874  (se = 0.01 )
+## Likelihood ratio test= 333.1  on 5 df,   p=&lt;2e-16
+## Wald test            = 2351  on 5 df,   p=&lt;2e-16
+## Score (logrank) test = 281.6  on 5 df,   p=&lt;2e-16,   Robust = 4  p=0.5
+## 
+##   (Note: the likelihood ratio and score tests assume independence of
+##      observations within a cluster, the Wald and robust score tests do not).</code></pre>
+<pre class="r"><code>confint(emmeans(cox_3_adj_stratified,revpairwise~sch.IMI.cow|ps_sample_3_to_6,type=&quot;response&quot;)$contrasts)</code></pre>
+<pre><code>## ps_sample_3_to_6 = 0:
+##  contrast                    ratio    SE  df asymp.LCL asymp.UCL
+##  sch.IMI.cow1 / sch.IMI.cow0 0.867 0.112 Inf     0.673      1.12
+## 
+## ps_sample_3_to_6 = 1:
+##  contrast                    ratio    SE  df asymp.LCL asymp.UCL
+##  sch.IMI.cow1 / sch.IMI.cow0 2.247 0.400 Inf     1.584      3.19
+## 
+## Results are averaged over the levels of: calving.sau, calving.sslo 
+## Confidence level used: 0.95 
+## Intervals are back-transformed from the log scale</code></pre>
 <pre class="r"><code># NAS non-chromogenes
 
 cox_4 &lt;- coxph(survival~ nas.non.chrom.IMI.cow+cluster(Site), data=df_survival)
