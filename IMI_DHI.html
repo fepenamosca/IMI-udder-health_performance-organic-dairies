@@ -8605,7 +8605,7 @@ emmeans(model_11,revpairwise~enterococcus.spp.IMI.cow|postpartum_sample)</code><
 ##   -0.323  0.7472
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
-<pre class="r"><code>model_11 &lt;- lme(fixed =milk_kg~ enterococcus.spp.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_11 &lt;- lme(fixed =milk_kg~ enterococcus.spp.IMI.cow*postpartum_sample+calving.nas+calving.sau,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 emmeans_11 &lt;- emmeans(model_11,revpairwise~enterococcus.spp.IMI.cow|postpartum_sample)
 
@@ -8613,151 +8613,151 @@ emmeans_11</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          23.3 3.09  3    13.42     33.1
-##  1                          22.3 3.28  3    11.84     32.7
+##  0                          23.6 3.21  3    13.37     33.8
+##  1                          22.2 3.40  3    11.37     33.0
 ## 
 ## postpartum_sample = 2:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          25.2 3.09  3    15.33     35.0
-##  1                          25.3 3.29  3    14.80     35.7
+##  0                          25.5 3.21  3    15.28     35.7
+##  1                          25.2 3.41  3    14.34     36.0
 ## 
 ## postpartum_sample = 3:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          24.3 3.09  3    14.42     34.1
-##  1                          24.9 3.32  3    14.33     35.4
+##  0                          24.6 3.21  3    14.36     34.8
+##  1                          24.8 3.44  3    13.85     35.7
 ## 
 ## postpartum_sample = 4:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          23.2 3.10  3    13.37     33.1
-##  1                          23.9 3.32  3    13.30     34.5
+##  0                          23.6 3.22  3    13.32     33.8
+##  1                          23.8 3.44  3    12.81     34.7
 ## 
 ## postpartum_sample = 5:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          22.8 3.10  3    12.93     32.6
-##  1                          22.2 3.33  3    11.57     32.8
+##  0                          23.1 3.22  3    12.89     33.4
+##  1                          22.0 3.45  3    11.06     33.0
 ## 
 ## postpartum_sample = 6:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          20.6 3.10  3    10.75     30.5
-##  1                          20.6 3.35  3     9.93     31.2
+##  0                          20.9 3.22  3    10.70     31.2
+##  1                          20.5 3.47  3     9.42     31.5
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -1.0008 1.23 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -1.417 1.23 326
 ##  t.ratio p.value
-##   -0.815  0.4154
+##   -1.155  0.2489
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.0806 1.26 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -0.321 1.26 326
 ##  t.ratio p.value
-##    0.064  0.9490
+##   -0.255  0.7990
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6238 1.34 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0    0.192 1.34 326
 ##  t.ratio p.value
-##    0.466  0.6415
+##    0.144  0.8857
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6551 1.37 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0    0.201 1.37 326
 ##  t.ratio p.value
-##    0.479  0.6324
+##    0.147  0.8832
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.6129 1.38 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -1.080 1.38 326
 ##  t.ratio p.value
-##   -0.443  0.6577
+##   -0.783  0.4342
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.0298 1.42 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -0.496 1.42 326
 ##  t.ratio p.value
-##   -0.021  0.9833
+##   -0.350  0.7263
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>confint(emmeans_11)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          23.3 3.09  3    13.42     33.1
-##  1                          22.3 3.28  3    11.84     32.7
+##  0                          23.6 3.21  3    13.37     33.8
+##  1                          22.2 3.40  3    11.37     33.0
 ## 
 ## postpartum_sample = 2:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          25.2 3.09  3    15.33     35.0
-##  1                          25.3 3.29  3    14.80     35.7
+##  0                          25.5 3.21  3    15.28     35.7
+##  1                          25.2 3.41  3    14.34     36.0
 ## 
 ## postpartum_sample = 3:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          24.3 3.09  3    14.42     34.1
-##  1                          24.9 3.32  3    14.33     35.4
+##  0                          24.6 3.21  3    14.36     34.8
+##  1                          24.8 3.44  3    13.85     35.7
 ## 
 ## postpartum_sample = 4:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          23.2 3.10  3    13.37     33.1
-##  1                          23.9 3.32  3    13.30     34.5
+##  0                          23.6 3.22  3    13.32     33.8
+##  1                          23.8 3.44  3    12.81     34.7
 ## 
 ## postpartum_sample = 5:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          22.8 3.10  3    12.93     32.6
-##  1                          22.2 3.33  3    11.57     32.8
+##  0                          23.1 3.22  3    12.89     33.4
+##  1                          22.0 3.45  3    11.06     33.0
 ## 
 ## postpartum_sample = 6:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
-##  0                          20.6 3.10  3    10.75     30.5
-##  1                          20.6 3.35  3     9.93     31.2
+##  0                          20.9 3.22  3    10.70     31.2
+##  1                          20.5 3.47  3     9.42     31.5
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -1.0008 1.23 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -1.417 1.23 326
 ##  lower.CL upper.CL
-##     -3.42     1.41
+##     -3.83    0.996
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.0806 1.26 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -0.321 1.26 326
 ##  lower.CL upper.CL
-##     -2.40     2.56
+##     -2.80    2.155
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6238 1.34 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0    0.192 1.34 326
 ##  lower.CL upper.CL
-##     -2.01     3.26
+##     -2.44    2.824
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6551 1.37 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0    0.201 1.37 326
 ##  lower.CL upper.CL
-##     -2.04     3.35
+##     -2.49    2.889
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.6129 1.38 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -1.080 1.38 326
 ##  lower.CL upper.CL
-##     -3.33     2.11
+##     -3.79    1.634
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.0298 1.42 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -0.496 1.42 326
 ##  lower.CL upper.CL
-##     -2.82     2.76
+##     -3.28    2.290
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>adj_means_11 &lt;- as.data.frame(emmeans_11$emmeans)
@@ -8765,35 +8765,35 @@ emmeans_11</code></pre>
 adj_means_11</code></pre>
 <pre><code>## postpartum_sample = 1:
 ##  enterococcus.spp.IMI.cow   emmean       SE df  lower.CL upper.CL
-##  0                        23.26535 3.092479  3 13.423698 33.10700
-##  1                        22.26451 3.275733  3 11.839669 32.68936
+##  0                        23.59425 3.213583  3 13.367196 33.82131
+##  1                        22.17754 3.396861  3 11.367216 32.98787
 ## 
 ## postpartum_sample = 2:
 ##  enterococcus.spp.IMI.cow   emmean       SE df  lower.CL upper.CL
-##  0                        25.17641 3.092637  3 15.334254 35.01856
-##  1                        25.25699 3.287066  3 14.796081 35.71790
+##  0                        25.50949 3.213690  3 15.282095 35.73689
+##  1                        25.18875 3.407692  3 14.343949 36.03354
 ## 
 ## postpartum_sample = 3:
 ##  enterococcus.spp.IMI.cow   emmean       SE df  lower.CL upper.CL
-##  0                        24.26312 3.093751  3 14.417422 34.10881
-##  1                        24.88689 3.316679  3 14.331737 35.44204
+##  0                        24.59463 3.214865  3 14.363493 34.82577
+##  1                        24.78709 3.436883  3 13.849391 35.72478
 ## 
 ## postpartum_sample = 4:
 ##  enterococcus.spp.IMI.cow   emmean       SE df  lower.CL upper.CL
-##  0                        23.22958 3.099449  3 13.365754 33.09341
-##  1                        23.88469 3.324966  3 13.303169 34.46622
+##  0                        23.56858 3.220249  3 13.320305 33.81685
+##  1                        23.76953 3.444957  3 12.806134 34.73292
 ## 
 ## postpartum_sample = 5:
 ##  enterococcus.spp.IMI.cow   emmean       SE df  lower.CL upper.CL
-##  0                        22.78560 3.096498  3 12.931157 32.64003
-##  1                        22.17274 3.331854  3 11.569290 32.77619
+##  0                        23.12490 3.217467  3 12.885484 33.36431
+##  1                        22.04469 3.451584  3 11.060212 33.02917
 ## 
 ## postpartum_sample = 6:
 ##  enterococcus.spp.IMI.cow   emmean       SE df  lower.CL upper.CL
-##  0                        20.60553 3.097668  3 10.747368 30.46369
-##  1                        20.57578 3.346135  3  9.926883 31.22467
+##  0                        20.94626 3.218495  3 10.703571 31.18895
+##  1                        20.45017 3.465438  3  9.421597 31.47874
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>enterococcus_genus_title &lt;- expression(paste(italic(&quot;Enterococcus &quot;),&quot;spp.&quot;))
@@ -8887,7 +8887,7 @@ emmeans(model_12,revpairwise~gram.neg.IMI.cow|postpartum_sample)</code></pre>
 ##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    1.638 1.49 328   1.100  0.2722
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
-<pre class="r"><code>model_12 &lt;- lme(fixed =milk_kg~ gram.neg.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_12 &lt;- lme(fixed =milk_kg~ gram.neg.IMI.cow*postpartum_sample+calving.nas+calving.sau.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 emmeans_12 &lt;- emmeans(model_12,revpairwise~gram.neg.IMI.cow|postpartum_sample)
 
@@ -8923,7 +8923,7 @@ emmeans_12</code></pre>
 ##  0                  20.5 3.09  3     10.6     30.3
 ##  1                  22.1 3.38  3     11.3     32.8
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -8952,7 +8952,7 @@ emmeans_12</code></pre>
 ##  contrast                              estimate   SE  df t.ratio p.value
 ##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    1.632 1.48 326   1.099  0.2724
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>confint(emmeans_12)</code></pre>
 <pre><code>## $emmeans
@@ -8986,7 +8986,7 @@ emmeans_12</code></pre>
 ##  0                  20.5 3.09  3     10.6     30.3
 ##  1                  22.1 3.38  3     11.3     32.8
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -9015,7 +9015,7 @@ emmeans_12</code></pre>
 ##  contrast                              estimate   SE  df lower.CL upper.CL
 ##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    1.632 1.48 326    -1.29    4.552
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>adj_means_12 &lt;- as.data.frame(emmeans_12$emmeans)
@@ -9051,7 +9051,7 @@ adj_means_12</code></pre>
 ##  0                20.45940 3.092640  3 10.61724 30.30156
 ##  1                22.09130 3.376986  3 11.34422 32.83838
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>milk_12 &lt;- ggplot(adj_means_12, aes(x=postpartum_sample, y=emmean, group=gram.neg.IMI.cow, color=gram.neg.IMI.cow)) + 
@@ -9067,14 +9067,14 @@ adj_means_12</code></pre>
                      values = c(&quot;#009999&quot;, &quot;#990000&quot;))</code></pre>
 <pre><code>## Scale for colour is already present.
 ## Adding another scale for colour, which will replace the existing scale.</code></pre>
-<pre class="r"><code>model_12_adj_overall &lt;- lme(fixed =milk_kg~ gram.neg.IMI.cow+calving.sau.strep+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_12_adj_overall &lt;- lme(fixed =milk_kg~ gram.neg.IMI.cow+calving.sau.sslo+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 Confint(model_12_adj_overall)</code></pre>
-<pre><code>##                        Estimate     2.5 %     97.5 %
-## (Intercept)        24.426797049 18.412304 30.4412897
-## gram.neg.IMI.cow1  -0.008964974 -1.840902  1.8229724
-## calving.sau.strep1 -1.754409459 -2.936029 -0.5727901
-## calving.nas1       -0.572354077 -1.768951  0.6242424</code></pre>
+<pre><code>##                       Estimate     2.5 %     97.5 %
+## (Intercept)       24.426797049 18.412304 30.4412897
+## gram.neg.IMI.cow1 -0.008964974 -1.840902  1.8229724
+## calving.sau.sslo1 -1.754409459 -2.936029 -0.5727901
+## calving.nas1      -0.572354077 -1.768951  0.6242424</code></pre>
 <pre class="r"><code># ---- Others ----
 
 model_13 &lt;- lme(fixed =milk_kg~ other.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
@@ -9140,7 +9140,7 @@ emmeans(model_13,revpairwise~other.IMI.cow|postpartum_sample)</code></pre>
 ##  other.IMI.cow1 - other.IMI.cow0    1.234 0.917 328   1.346  0.1792
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
-<pre class="r"><code>model_13 &lt;- lme(fixed =milk_kg~ other.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_13 &lt;- lme(fixed =milk_kg~ other.IMI.cow*postpartum_sample+calving.nas+calving.sau.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 emmeans_13 &lt;- emmeans(model_13,revpairwise~other.IMI.cow|postpartum_sample)
 
@@ -9176,7 +9176,7 @@ emmeans_13</code></pre>
 ##  0               20.3 3.05  3     10.5     30.0
 ##  1               21.4 3.10  3     11.5     31.3
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -9205,7 +9205,7 @@ emmeans_13</code></pre>
 ##  contrast                        estimate    SE  df t.ratio p.value
 ##  other.IMI.cow1 - other.IMI.cow0    1.117 0.922 326   1.212  0.2263
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>confint(emmeans_13)</code></pre>
 <pre><code>## $emmeans
@@ -9239,7 +9239,7 @@ emmeans_13</code></pre>
 ##  0               20.3 3.05  3     10.5     30.0
 ##  1               21.4 3.10  3     11.5     31.3
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -9268,7 +9268,7 @@ emmeans_13</code></pre>
 ##  contrast                        estimate    SE  df lower.CL upper.CL
 ##  other.IMI.cow1 - other.IMI.cow0    1.117 0.922 326  -0.6958     2.93
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>adj_means_13 &lt;- as.data.frame(emmeans_13$emmeans)
@@ -9304,7 +9304,7 @@ adj_means_13</code></pre>
 ##  0             20.26343 3.053700  3 10.54520 29.98167
 ##  1             21.38062 3.102723  3 11.50637 31.25487
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>milk_13 &lt;- ggplot(adj_means_13, aes(x=postpartum_sample, y=emmean, group=other.IMI.cow, color=other.IMI.cow)) + 
@@ -9320,14 +9320,14 @@ adj_means_13</code></pre>
                      values = c(&quot;#009999&quot;, &quot;#990000&quot;))</code></pre>
 <pre><code>## Scale for colour is already present.
 ## Adding another scale for colour, which will replace the existing scale.</code></pre>
-<pre class="r"><code>model_13_adj_overall &lt;- lme(fixed =milk_kg~ other.IMI.cow+calving.sau.strep+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_13_adj_overall &lt;- lme(fixed =milk_kg~ other.IMI.cow+calving.sau.sslo+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 Confint(model_13_adj_overall)</code></pre>
-<pre><code>##                      Estimate      2.5 %     97.5 %
-## (Intercept)        24.1118134 18.1767620 30.0468648
-## other.IMI.cow1      0.8065115 -0.4445489  2.0575720
-## calving.sau.strep1 -1.7069586 -2.8884525 -0.5254646
-## calving.nas1       -0.4247168 -1.6408484  0.7914148</code></pre>
+<pre><code>##                     Estimate      2.5 %     97.5 %
+## (Intercept)       24.1118134 18.1767620 30.0468648
+## other.IMI.cow1     0.8065115 -0.4445489  2.0575720
+## calving.sau.sslo1 -1.7069586 -2.8884525 -0.5254646
+## calving.nas1      -0.4247168 -1.6408484  0.7914148</code></pre>
 <pre class="r"><code># ---- Bacillus ----
 
 model_14 &lt;- lme(fixed =milk_kg~ bacillus.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
@@ -9393,7 +9393,7 @@ emmeans(model_14,revpairwise~bacillus.IMI.cow|postpartum_sample)</code></pre>
 ##  bacillus.IMI.cow1 - bacillus.IMI.cow0     2.50 1.012 328   2.474  0.0139
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
-<pre class="r"><code>model_14 &lt;- lme(fixed =milk_kg~ bacillus.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_14 &lt;- lme(fixed =milk_kg~ bacillus.IMI.cow*postpartum_sample+calving.nas+calving.sau.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 emmeans_14 &lt;- emmeans(model_14,revpairwise~bacillus.IMI.cow|postpartum_sample)
 
@@ -9429,7 +9429,7 @@ emmeans_14</code></pre>
 ##  0                  20.2 3.05  3     10.5     29.9
 ##  1                  22.5 3.14  3     12.5     32.5
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -9458,7 +9458,7 @@ emmeans_14</code></pre>
 ##  contrast                              estimate    SE  df t.ratio p.value
 ##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.295 1.015 326   2.260  0.0245
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>confint(emmeans_14)</code></pre>
 <pre><code>## $emmeans
@@ -9492,7 +9492,7 @@ emmeans_14</code></pre>
 ##  0                  20.2 3.05  3     10.5     29.9
 ##  1                  22.5 3.14  3     12.5     32.5
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -9521,7 +9521,7 @@ emmeans_14</code></pre>
 ##  contrast                              estimate    SE  df lower.CL upper.CL
 ##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.295 1.015 326   0.2968     4.29
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>adj_means_14 &lt;- as.data.frame(emmeans_14$emmeans)
@@ -9557,7 +9557,7 @@ adj_means_14</code></pre>
 ##  0                20.18345 3.045378  3 10.49170 29.87520
 ##  1                22.47801 3.144023  3 12.47233 32.48369
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>bacillus_title &lt;- expression(paste(italic(&quot;Bacillus &quot;),&quot;sp.&quot;))
@@ -9576,14 +9576,14 @@ milk_14 &lt;- ggplot(adj_means_14, aes(x=postpartum_sample, y=emmean, group=baci
                      values = c(&quot;#009999&quot;, &quot;#990000&quot;))</code></pre>
 <pre><code>## Scale for colour is already present.
 ## Adding another scale for colour, which will replace the existing scale.</code></pre>
-<pre class="r"><code>model_14_adj_overall &lt;- lme(fixed =milk_kg~ bacillus.IMI.cow+calving.sau.strep+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_14_adj_overall &lt;- lme(fixed =milk_kg~ bacillus.IMI.cow+calving.sau.sslo+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 Confint(model_14_adj_overall)</code></pre>
-<pre><code>##                      Estimate      2.5 %     97.5 %
-## (Intercept)        23.9865111 18.0564685 29.9165537
-## bacillus.IMI.cow1   1.6192350  0.2829174  2.9555526
-## calving.sau.strep1 -1.5820280 -2.7637504 -0.4003056
-## calving.nas1       -0.3752733 -1.5745172  0.8239706</code></pre>
+<pre><code>##                     Estimate      2.5 %     97.5 %
+## (Intercept)       23.9865111 18.0564685 29.9165537
+## bacillus.IMI.cow1  1.6192350  0.2829174  2.9555526
+## calving.sau.sslo1 -1.5820280 -2.7637504 -0.4003056
+## calving.nas1      -0.3752733 -1.5745172  0.8239706</code></pre>
 <pre class="r"><code># ---- Coryne ----
 
 model_15 &lt;- lme(fixed =milk_kg~ coryne.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
@@ -9649,7 +9649,7 @@ emmeans(model_15,revpairwise~coryne.IMI.cow|postpartum_sample)</code></pre>
 ##  coryne.IMI.cow1 - coryne.IMI.cow0    0.229 1.20 328   0.191  0.8483
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
-<pre class="r"><code>model_15 &lt;- lme(fixed =milk_kg~ coryne.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_15 &lt;- lme(fixed =milk_kg~ coryne.IMI.cow*postpartum_sample+calving.nas+calving.sau.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 emmeans_15 &lt;- emmeans(model_15,revpairwise~coryne.IMI.cow|postpartum_sample)
 
@@ -9685,7 +9685,7 @@ emmeans_15</code></pre>
 ##  0                20.6 3.10  3     10.7     30.4
 ##  1                20.8 3.27  3     10.4     31.2
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -9714,7 +9714,7 @@ emmeans_15</code></pre>
 ##  contrast                          estimate   SE  df t.ratio p.value
 ##  coryne.IMI.cow1 - coryne.IMI.cow0    0.210 1.20 326   0.175  0.8612
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>confint(emmeans_15)</code></pre>
 <pre><code>## $emmeans
@@ -9748,7 +9748,7 @@ emmeans_15</code></pre>
 ##  0                20.6 3.10  3     10.7     30.4
 ##  1                20.8 3.27  3     10.4     31.2
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95 
 ## 
@@ -9777,7 +9777,7 @@ emmeans_15</code></pre>
 ##  contrast                          estimate   SE  df lower.CL upper.CL
 ##  coryne.IMI.cow1 - coryne.IMI.cow0    0.210 1.20 326   -2.150    2.570
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>adj_means_15 &lt;- as.data.frame(emmeans_15$emmeans)
@@ -9813,7 +9813,7 @@ adj_means_15</code></pre>
 ##  0              20.55372 3.102375  3 10.68057 30.42686
 ##  1              20.76373 3.265050  3 10.37288 31.15457
 ## 
-## Results are averaged over the levels of: calving.nas, calving.sau.strep 
+## Results are averaged over the levels of: calving.nas, calving.sau.sslo 
 ## Degrees-of-freedom method: containment 
 ## Confidence level used: 0.95</code></pre>
 <pre class="r"><code>coryne_title &lt;- expression(paste(italic(&quot;Corynebacterium &quot;),&quot;sp.&quot;))
@@ -9832,14 +9832,14 @@ milk_15 &lt;- ggplot(adj_means_15, aes(x=postpartum_sample, y=emmean, group=cory
                      values = c(&quot;#009999&quot;, &quot;#990000&quot;))</code></pre>
 <pre><code>## Scale for colour is already present.
 ## Adding another scale for colour, which will replace the existing scale.</code></pre>
-<pre class="r"><code>model_15_adj_overall &lt;- lme(fixed =milk_kg~ coryne.IMI.cow+calving.sau.strep+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
+<pre class="r"><code>model_15_adj_overall &lt;- lme(fixed =milk_kg~ coryne.IMI.cow+calving.sau.sslo+calving.nas,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
 Confint(model_15_adj_overall)</code></pre>
-<pre><code>##                      Estimate     2.5 %     97.5 %
-## (Intercept)        24.4658925 18.423727 30.5080578
-## coryne.IMI.cow1    -0.2483833 -1.844841  1.3480745
-## calving.sau.strep1 -1.7513374 -2.932846 -0.5698286
-## calving.nas1       -0.5988579 -1.807454  0.6097383</code></pre>
+<pre><code>##                     Estimate     2.5 %     97.5 %
+## (Intercept)       24.4658925 18.423727 30.5080578
+## coryne.IMI.cow1   -0.2483833 -1.844841  1.3480745
+## calving.sau.sslo1 -1.7513374 -2.932846 -0.5698286
+## calving.nas1      -0.5988579 -1.807454  0.6097383</code></pre>
 <pre class="r"><code>library(ggpubr)
 
 staph_figure &lt;- ggarrange( milk_1 + rremove(&quot;ylab&quot;) + rremove(&quot;xlab&quot;), 
@@ -9875,7 +9875,7 @@ sslo_figure_annotated &lt;- annotate_figure(sslo_figure,
 
 
 sslo_figure_annotated</code></pre>
-<p><img src="data:image/png;base64,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" width="672" /></p>
+<p><img src="data:image/png;base64,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" width="672" /></p>
 <pre class="r"><code>ggsave(plot = last_plot(),&quot;./figures_article_2/sslo.png&quot;,width = 20, height = 30, units = &quot;cm&quot;) 
 
 
@@ -9939,7 +9939,7 @@ summary(nhscc_1)</code></pre>
 ##              (Intr) a.(..IMI..)1
 ## a.(..IMI..)1 -0.070             
 ## a.(..IMI..)2 -0.149  0.183</code></pre>
-<pre class="r"><code>emmeans(nhscc_1,pairwise~staph.aureus.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_1,revpairwise~staph.aureus.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  staph.aureus.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                         0.929 0.255 Inf     0.543      1.59
@@ -9950,14 +9950,14 @@ summary(nhscc_1)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                                          ratio     SE  df null
-##  staph.aureus.IMI.cow.p0 / staph.aureus.IMI.cow.p1 0.592 0.1891 Inf    1
-##  staph.aureus.IMI.cow.p0 / staph.aureus.IMI.cow.p2 0.369 0.0533 Inf    1
-##  staph.aureus.IMI.cow.p1 / staph.aureus.IMI.cow.p2 0.623 0.2031 Inf    1
-##  z.ratio p.value
-##   -1.642  0.2280
-##   -6.896  &lt;.0001
-##   -1.451  0.3151
+##  contrast                                          ratio    SE  df null z.ratio
+##  staph.aureus.IMI.cow.p1 / staph.aureus.IMI.cow.p0  1.69 0.540 Inf    1   1.642
+##  staph.aureus.IMI.cow.p2 / staph.aureus.IMI.cow.p0  2.71 0.392 Inf    1   6.896
+##  staph.aureus.IMI.cow.p2 / staph.aureus.IMI.cow.p1  1.60 0.523 Inf    1   1.451
+##  p.value
+##   0.2280
+##   &lt;.0001
+##   0.3151
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -10007,7 +10007,7 @@ summary(nhscc_1_adj)</code></pre>
 ## as.factor(staph.aureus.IMI.cow.p)2 3.0757994 2.3116649 4.092523
 ## calving.nas1                       1.3288153 0.9967507 1.771506
 ## calving.sslo1                      1.8770886 1.3965869 2.522909</code></pre>
-<pre class="r"><code>emmeans_p1 &lt;- emmeans(nhscc_1_adj,pairwise~staph.aureus.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p1 &lt;- emmeans(nhscc_1_adj,revpairwise~staph.aureus.IMI.cow.p,type=&quot;response&quot;)
 performance::icc(nhscc_1_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
 ##   be unreliable.</code></pre>
@@ -10027,14 +10027,14 @@ performance::icc(nhscc_1_adj)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                                          ratio     SE  df null
-##  staph.aureus.IMI.cow.p0 / staph.aureus.IMI.cow.p1 0.661 0.2098 Inf    1
-##  staph.aureus.IMI.cow.p0 / staph.aureus.IMI.cow.p2 0.325 0.0474 Inf    1
-##  staph.aureus.IMI.cow.p1 / staph.aureus.IMI.cow.p2 0.492 0.1580 Inf    1
-##  z.ratio p.value
-##   -1.305  0.3922
-##   -7.711  &lt;.0001
-##   -2.208  0.0697
+##  contrast                                          ratio    SE  df null z.ratio
+##  staph.aureus.IMI.cow.p1 / staph.aureus.IMI.cow.p0  1.51 0.480 Inf    1   1.305
+##  staph.aureus.IMI.cow.p2 / staph.aureus.IMI.cow.p0  3.08 0.448 Inf    1   7.711
+##  staph.aureus.IMI.cow.p2 / staph.aureus.IMI.cow.p1  2.03 0.653 Inf    1   2.208
+##  p.value
+##   0.3922
+##   &lt;.0001
+##   0.0697
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sslo 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -10097,14 +10097,7 @@ summary(nhscc_2)</code></pre>
 ##             (Intr) a.(.IMI..)1
 ## a.(.IMI..)1 -0.158            
 ## a.(.IMI..)2 -0.173  0.373</code></pre>
-<pre class="r"><code>exp(Confint(nhscc_2_adj))</code></pre>
-<pre><code>##                            Estimate     2.5 %   97.5 %
-## (Intercept)               0.8273568 0.5149070 1.329404
-## as.factor(nas.IMI.cow.p)1 1.1374074 0.9013875 1.435227
-## as.factor(nas.IMI.cow.p)2 1.1722768 0.9449453 1.454299
-## calving.sau1              2.4497551 2.0167175 2.975776
-## calving.sslo1             1.6020458 1.3133671 1.954176</code></pre>
-<pre class="r"><code>emmeans(nhscc_2,pairwise~nas.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_2,revpairwise~nas.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  nas.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                 1.24 0.427 Inf     0.636      2.44
@@ -10116,9 +10109,9 @@ summary(nhscc_2)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                        ratio    SE  df null z.ratio p.value
-##  nas.IMI.cow.p0 / nas.IMI.cow.p1  1.00 0.186 Inf    1   0.026  0.9996
-##  nas.IMI.cow.p0 / nas.IMI.cow.p2  1.03 0.174 Inf    1   0.172  0.9837
-##  nas.IMI.cow.p1 / nas.IMI.cow.p2  1.02 0.203 Inf    1   0.123  0.9918
+##  nas.IMI.cow.p1 / nas.IMI.cow.p0 0.995 0.184 Inf    1  -0.026  0.9996
+##  nas.IMI.cow.p2 / nas.IMI.cow.p0 0.971 0.164 Inf    1  -0.172  0.9837
+##  nas.IMI.cow.p2 / nas.IMI.cow.p1 0.976 0.194 Inf    1  -0.123  0.9918
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -10161,7 +10154,14 @@ summary(nhscc_2_adj)</code></pre>
 ## a.(.IMI..)2 -0.315  0.420                           
 ## calving.sa1 -0.242  0.142       0.227               
 ## calvng.ssl1 -0.247  0.192       0.221       0.155</code></pre>
-<pre class="r"><code>emmeans_p2 &lt;- emmeans(nhscc_2_adj,pairwise~nas.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>exp(Confint(nhscc_2_adj))</code></pre>
+<pre><code>##                            Estimate     2.5 %   97.5 %
+## (Intercept)               0.7462164 0.4641763 1.199628
+## as.factor(nas.IMI.cow.p)1 1.2534936 0.8948844 1.755809
+## as.factor(nas.IMI.cow.p)2 1.3137751 0.9577304 1.802182
+## calving.sau1              2.6831372 1.9823986 3.631573
+## calving.sslo1             1.8052135 1.3315695 2.447334</code></pre>
+<pre class="r"><code>emmeans_p2 &lt;- emmeans(nhscc_2_adj,revpairwise~nas.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_2_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -10183,9 +10183,9 @@ performance::icc(nhscc_2_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                        ratio    SE  df null z.ratio p.value
-##  nas.IMI.cow.p0 / nas.IMI.cow.p1 0.798 0.137 Inf    1  -1.314  0.3873
-##  nas.IMI.cow.p0 / nas.IMI.cow.p2 0.761 0.123 Inf    1  -1.692  0.2082
-##  nas.IMI.cow.p1 / nas.IMI.cow.p2 0.954 0.171 Inf    1  -0.261  0.9630
+##  nas.IMI.cow.p1 / nas.IMI.cow.p0  1.25 0.216 Inf    1   1.314  0.3873
+##  nas.IMI.cow.p2 / nas.IMI.cow.p0  1.31 0.212 Inf    1   1.692  0.2082
+##  nas.IMI.cow.p2 / nas.IMI.cow.p1  1.05 0.188 Inf    1   0.261  0.9630
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -10248,7 +10248,7 @@ summary(nhscc_3)</code></pre>
 ##             (Intr) s.IMI..1
 ## sch.IMI.c.1 -0.103         
 ## sch.IMI.c.2 -0.130  0.219</code></pre>
-<pre class="r"><code>emmeans(nhscc_3,pairwise~sch.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_3,revpairwise~sch.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  sch.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                 1.24 0.422 Inf     0.639      2.42
@@ -10260,9 +10260,9 @@ summary(nhscc_3)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                        ratio    SE  df null z.ratio p.value
-##  sch.IMI.cow.p0 / sch.IMI.cow.p1 0.944 0.208 Inf    1  -0.262  0.9629
-##  sch.IMI.cow.p0 / sch.IMI.cow.p2 1.068 0.181 Inf    1   0.388  0.9204
-##  sch.IMI.cow.p1 / sch.IMI.cow.p2 1.131 0.279 Inf    1   0.500  0.8715
+##  sch.IMI.cow.p1 / sch.IMI.cow.p0 1.059 0.234 Inf    1   0.262  0.9629
+##  sch.IMI.cow.p2 / sch.IMI.cow.p0 0.936 0.158 Inf    1  -0.388  0.9204
+##  sch.IMI.cow.p2 / sch.IMI.cow.p1 0.884 0.218 Inf    1  -0.500  0.8715
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -10310,7 +10310,7 @@ summary(nhscc_3_adj)</code></pre>
 ## sch.IMI.cow.p2 1.1661357 0.8559456 1.588737
 ## calving.sau1   2.5880955 1.9203365 3.488054
 ## calving.sslo1  1.7518036 1.2960075 2.367900</code></pre>
-<pre class="r"><code>emmeans_p3 &lt;- emmeans(nhscc_3_adj,pairwise~sch.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p3 &lt;- emmeans(nhscc_3_adj,revpairwise~sch.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_3_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -10332,9 +10332,9 @@ performance::icc(nhscc_3_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                        ratio    SE  df null z.ratio p.value
-##  sch.IMI.cow.p0 / sch.IMI.cow.p1 0.816 0.164 Inf    1  -1.013  0.5688
-##  sch.IMI.cow.p0 / sch.IMI.cow.p2 0.858 0.135 Inf    1  -0.974  0.5933
-##  sch.IMI.cow.p1 / sch.IMI.cow.p2 1.051 0.234 Inf    1   0.224  0.9728
+##  sch.IMI.cow.p1 / sch.IMI.cow.p0 1.226 0.246 Inf    1   1.013  0.5688
+##  sch.IMI.cow.p2 / sch.IMI.cow.p0 1.166 0.184 Inf    1   0.974  0.5933
+##  sch.IMI.cow.p2 / sch.IMI.cow.p1 0.951 0.212 Inf    1  -0.224  0.9728
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -10395,14 +10395,7 @@ summary(nhscc_4)</code></pre>
 ##               (Intr) a.(...IMI..)1
 ## a.(...IMI..)1 -0.090              
 ## a.(...IMI..)2 -0.064  0.173</code></pre>
-<pre class="r"><code>exp(Confint(nhscc_4_adj))</code></pre>
-<pre><code>##                                      Estimate     2.5 %   97.5 %
-## (Intercept)                         0.8525874 0.5415117 1.342363
-## as.factor(nas.non.chrom.IMI.cow.p)1 1.1374372 0.8933161 1.448271
-## as.factor(nas.non.chrom.IMI.cow.p)2 1.4383593 1.0610514 1.949837
-## calving.sau1                        2.4930927 2.0497754 3.032289
-## calving.sslo1                       1.5655074 1.2878176 1.903075</code></pre>
-<pre class="r"><code>emmeans(nhscc_4,pairwise~nas.non.chrom.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_4,revpairwise~nas.non.chrom.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  nas.non.chrom.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                           1.23 0.414 Inf     0.640      2.38
@@ -10414,13 +10407,13 @@ summary(nhscc_4)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                            ratio    SE  df null
-##  nas.non.chrom.IMI.cow.p0 / nas.non.chrom.IMI.cow.p1 1.070 0.210 Inf    1
-##  nas.non.chrom.IMI.cow.p0 / nas.non.chrom.IMI.cow.p2 0.871 0.230 Inf    1
-##  nas.non.chrom.IMI.cow.p1 / nas.non.chrom.IMI.cow.p2 0.814 0.245 Inf    1
+##  nas.non.chrom.IMI.cow.p1 / nas.non.chrom.IMI.cow.p0 0.934 0.183 Inf    1
+##  nas.non.chrom.IMI.cow.p2 / nas.non.chrom.IMI.cow.p0 1.148 0.304 Inf    1
+##  nas.non.chrom.IMI.cow.p2 / nas.non.chrom.IMI.cow.p1 1.229 0.370 Inf    1
 ##  z.ratio p.value
-##    0.347  0.9358
-##   -0.522  0.8604
-##   -0.686  0.7718
+##   -0.347  0.9358
+##    0.522  0.8604
+##    0.686  0.7718
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -10462,7 +10455,14 @@ summary(nhscc_4_adj)</code></pre>
 ## a.(...IMI..)2 -0.136  0.205                               
 ## calving.sa1   -0.216  0.158         0.209                 
 ## calvng.ssl1   -0.193  0.095         0.073         0.130</code></pre>
-<pre class="r"><code>emmeans_p4 &lt;- emmeans(nhscc_4_adj,pairwise~nas.non.chrom.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>exp(Confint(nhscc_4_adj))</code></pre>
+<pre><code>##                                      Estimate     2.5 %   97.5 %
+## (Intercept)                         0.8071326 0.5144762 1.266265
+## as.factor(nas.non.chrom.IMI.cow.p)1 1.1656933 0.8235430 1.649994
+## as.factor(nas.non.chrom.IMI.cow.p)2 1.5983862 0.9971218 2.562213
+## calving.sau1                        2.6976781 1.9975281 3.643236
+## calving.sslo1                       1.7263792 1.2854517 2.318551</code></pre>
+<pre class="r"><code>emmeans_p4 &lt;- emmeans(nhscc_4_adj,revpairwise~nas.non.chrom.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_4_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -10484,13 +10484,13 @@ performance::icc(nhscc_4_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                            ratio    SE  df null
-##  nas.non.chrom.IMI.cow.p0 / nas.non.chrom.IMI.cow.p1 0.858 0.152 Inf    1
-##  nas.non.chrom.IMI.cow.p0 / nas.non.chrom.IMI.cow.p2 0.626 0.151 Inf    1
-##  nas.non.chrom.IMI.cow.p1 / nas.non.chrom.IMI.cow.p2 0.729 0.196 Inf    1
+##  nas.non.chrom.IMI.cow.p1 / nas.non.chrom.IMI.cow.p0  1.17 0.207 Inf    1
+##  nas.non.chrom.IMI.cow.p2 / nas.non.chrom.IMI.cow.p0  1.60 0.385 Inf    1
+##  nas.non.chrom.IMI.cow.p2 / nas.non.chrom.IMI.cow.p1  1.37 0.368 Inf    1
 ##  z.ratio p.value
-##   -0.865  0.6625
-##   -1.948  0.1254
-##   -1.177  0.4667
+##    0.865  0.6625
+##    1.948  0.1254
+##    1.177  0.4667
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -10554,14 +10554,7 @@ summary(nhscc_5)</code></pre>
 ##              (Intr) a.(..IMI..)1
 ## a.(..IMI..)1 -0.078             
 ## a.(..IMI..)2 -0.060  0.149</code></pre>
-<pre class="r"><code>exp(Confint(nhscc_5_adj))</code></pre>
-<pre><code>##                                 Estimate     2.5 %   97.5 %
-## (Intercept)                     0.875494 0.5508658 1.391427
-## as.factor(staph.spp.IMI.cow.p)1 1.004388 0.7694301 1.311094
-## as.factor(staph.spp.IMI.cow.p)2 1.394878 1.0310807 1.887035
-## calving.sau1                    2.455086 2.0200483 2.983814
-## calving.sslo1                   1.552017 1.2773898 1.885687</code></pre>
-<pre class="r"><code>emmeans(nhscc_5,pairwise~staph.spp.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_5,revpairwise~staph.spp.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  staph.spp.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                       1.24 0.415 Inf     0.642      2.39
@@ -10573,9 +10566,9 @@ summary(nhscc_5)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                    ratio    SE  df null z.ratio
-##  staph.spp.IMI.cow.p0 / staph.spp.IMI.cow.p1 1.120 0.238 Inf    1   0.537
-##  staph.spp.IMI.cow.p0 / staph.spp.IMI.cow.p2 0.875 0.230 Inf    1  -0.506
-##  staph.spp.IMI.cow.p1 / staph.spp.IMI.cow.p2 0.781 0.244 Inf    1  -0.790
+##  staph.spp.IMI.cow.p1 / staph.spp.IMI.cow.p0 0.892 0.189 Inf    1  -0.537
+##  staph.spp.IMI.cow.p2 / staph.spp.IMI.cow.p0 1.142 0.301 Inf    1   0.506
+##  staph.spp.IMI.cow.p2 / staph.spp.IMI.cow.p1 1.280 0.400 Inf    1   0.790
 ##  p.value
 ##   0.8533
 ##   0.8686
@@ -10629,7 +10622,7 @@ summary(nhscc_5_adj)</code></pre>
 ## as.factor(staph.spp.IMI.cow.p)2 1.5419837 0.9643663 2.465571
 ## calving.sau1                    2.6506048 1.9656300 3.574277
 ## calving.sslo1                   1.7077068 1.2720978 2.292483</code></pre>
-<pre class="r"><code>emmeans_p5 &lt;- emmeans(nhscc_5_adj,pairwise~staph.spp.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p5 &lt;- emmeans(nhscc_5_adj,revpairwise~staph.spp.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_5_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -10651,9 +10644,9 @@ performance::icc(nhscc_5_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                    ratio    SE  df null z.ratio
-##  staph.spp.IMI.cow.p0 / staph.spp.IMI.cow.p1 0.971 0.186 Inf    1  -0.153
-##  staph.spp.IMI.cow.p0 / staph.spp.IMI.cow.p2 0.649 0.155 Inf    1  -1.808
-##  staph.spp.IMI.cow.p1 / staph.spp.IMI.cow.p2 0.668 0.187 Inf    1  -1.441
+##  staph.spp.IMI.cow.p1 / staph.spp.IMI.cow.p0  1.03 0.197 Inf    1   0.153
+##  staph.spp.IMI.cow.p2 / staph.spp.IMI.cow.p0  1.54 0.369 Inf    1   1.808
+##  staph.spp.IMI.cow.p2 / staph.spp.IMI.cow.p1  1.50 0.420 Inf    1   1.441
 ##  p.value
 ##   0.9872
 ##   0.1668
@@ -10721,7 +10714,7 @@ summary(nhscc_6)</code></pre>
 ##             (Intr) a.(.IMI..)1
 ## a.(.IMI..)1 -0.169            
 ## a.(.IMI..)2 -0.125  0.283</code></pre>
-<pre class="r"><code>emmeans(nhscc_6,pairwise~strep.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_6,revpairwise~strep.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  strep.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                   1.05 0.320 Inf     0.577      1.91
@@ -10732,10 +10725,10 @@ summary(nhscc_6)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                            ratio     SE  df null z.ratio p.value
-##  strep.IMI.cow.p0 / strep.IMI.cow.p1 0.780 0.1324 Inf    1  -1.462  0.3092
-##  strep.IMI.cow.p0 / strep.IMI.cow.p2 0.479 0.0979 Inf    1  -3.602  0.0009
-##  strep.IMI.cow.p1 / strep.IMI.cow.p2 0.614 0.1386 Inf    1  -2.162  0.0778
+##  contrast                            ratio    SE  df null z.ratio p.value
+##  strep.IMI.cow.p1 / strep.IMI.cow.p0  1.28 0.218 Inf    1   1.462  0.3092
+##  strep.IMI.cow.p2 / strep.IMI.cow.p0  2.09 0.427 Inf    1   3.602  0.0009
+##  strep.IMI.cow.p2 / strep.IMI.cow.p1  1.63 0.368 Inf    1   2.162  0.0778
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -10784,7 +10777,7 @@ summary(nhscc_6_adj)</code></pre>
 ## as.factor(strep.IMI.cow.p)2 2.4169652 1.6784612 3.480403
 ## calving.sau1                2.7355689 2.0316572 3.683366
 ## calving.nas1                1.2552789 0.9423316 1.672156</code></pre>
-<pre class="r"><code>emmeans_p6 &lt;- emmeans(nhscc_6_adj,pairwise~strep.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p6 &lt;- emmeans(nhscc_6_adj,revpairwise~strep.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_6_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -10806,9 +10799,9 @@ performance::icc(nhscc_6_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                            ratio    SE  df null z.ratio p.value
-##  strep.IMI.cow.p0 / strep.IMI.cow.p1 0.840 0.134 Inf    1  -1.099  0.5148
-##  strep.IMI.cow.p0 / strep.IMI.cow.p2 0.414 0.077 Inf    1  -4.744  &lt;.0001
-##  strep.IMI.cow.p1 / strep.IMI.cow.p2 0.493 0.101 Inf    1  -3.458  0.0016
+##  strep.IMI.cow.p1 / strep.IMI.cow.p0  1.19 0.189 Inf    1   1.099  0.5148
+##  strep.IMI.cow.p2 / strep.IMI.cow.p0  2.42 0.450 Inf    1   4.744  &lt;.0001
+##  strep.IMI.cow.p2 / strep.IMI.cow.p1  2.03 0.415 Inf    1   3.458  0.0016
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -10871,7 +10864,7 @@ summary(nhscc_7)</code></pre>
 ##              (Intr) a.(..IMI..)1
 ## a.(..IMI..)1 -0.104             
 ## a.(..IMI..)2 -0.101  0.234</code></pre>
-<pre class="r"><code>emmeans(nhscc_7,pairwise~strep.genus.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_7,revpairwise~strep.genus.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  strep.genus.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                         1.09 0.311 Inf     0.621      1.91
@@ -10883,9 +10876,9 @@ summary(nhscc_7)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                        ratio    SE  df null z.ratio
-##  strep.genus.IMI.cow.p0 / strep.genus.IMI.cow.p1 0.667 0.140 Inf    1  -1.937
-##  strep.genus.IMI.cow.p0 / strep.genus.IMI.cow.p2 0.512 0.109 Inf    1  -3.143
-##  strep.genus.IMI.cow.p1 / strep.genus.IMI.cow.p2 0.768 0.201 Inf    1  -1.009
+##  strep.genus.IMI.cow.p1 / strep.genus.IMI.cow.p0  1.50 0.314 Inf    1   1.937
+##  strep.genus.IMI.cow.p2 / strep.genus.IMI.cow.p0  1.95 0.416 Inf    1   3.143
+##  strep.genus.IMI.cow.p2 / strep.genus.IMI.cow.p1  1.30 0.340 Inf    1   1.009
 ##  p.value
 ##   0.1285
 ##   0.0048
@@ -10938,7 +10931,7 @@ summary(nhscc_7_adj)</code></pre>
 ## as.factor(strep.genus.IMI.cow.p)2 2.223878 1.5163907 3.261452
 ## calving.sau1                      2.637007 1.9499007 3.566237
 ## calving.nas1                      1.252767 0.9387571 1.671811</code></pre>
-<pre class="r"><code>emmeans_p7 &lt;- emmeans(nhscc_7_adj,pairwise~strep.genus.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p7 &lt;- emmeans(nhscc_7_adj,revpairwise~strep.genus.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_7_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -10959,10 +10952,10 @@ performance::icc(nhscc_7_adj)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                                        ratio     SE  df null z.ratio
-##  strep.genus.IMI.cow.p0 / strep.genus.IMI.cow.p1 0.784 0.1546 Inf    1  -1.232
-##  strep.genus.IMI.cow.p0 / strep.genus.IMI.cow.p2 0.450 0.0879 Inf    1  -4.091
-##  strep.genus.IMI.cow.p1 / strep.genus.IMI.cow.p2 0.573 0.1379 Inf    1  -2.314
+##  contrast                                        ratio    SE  df null z.ratio
+##  strep.genus.IMI.cow.p1 / strep.genus.IMI.cow.p0  1.27 0.251 Inf    1   1.232
+##  strep.genus.IMI.cow.p2 / strep.genus.IMI.cow.p0  2.22 0.434 Inf    1   4.091
+##  strep.genus.IMI.cow.p2 / strep.genus.IMI.cow.p1  1.74 0.420 Inf    1   2.314
 ##  p.value
 ##   0.4341
 ##   0.0001
@@ -11039,7 +11032,7 @@ summary(nhscc_8)</code></pre>
 ## a.(..IMI..)2 -0.160  0.149                            
 ## calving.sa1  -0.226 -0.054        0.174               
 ## calving.ns1  -0.255  0.089        0.214        0.260</code></pre>
-<pre class="r"><code>emmeans(nhscc_8,pairwise~strep.dys.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_8,revpairwise~strep.dys.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  strep.dys.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                       1.53 0.340 Inf     0.988      2.37
@@ -11051,10 +11044,10 @@ summary(nhscc_8)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                                    ratio     SE  df null z.ratio
-##  strep.dys.IMI.cow.p0 / strep.dys.IMI.cow.p1 0.775 0.1837 Inf    1  -1.077
-##  strep.dys.IMI.cow.p0 / strep.dys.IMI.cow.p2 0.433 0.0952 Inf    1  -3.807
-##  strep.dys.IMI.cow.p1 / strep.dys.IMI.cow.p2 0.560 0.1669 Inf    1  -1.946
+##  contrast                                    ratio    SE  df null z.ratio
+##  strep.dys.IMI.cow.p1 / strep.dys.IMI.cow.p0  1.29 0.306 Inf    1   1.077
+##  strep.dys.IMI.cow.p2 / strep.dys.IMI.cow.p0  2.31 0.506 Inf    1   3.807
+##  strep.dys.IMI.cow.p2 / strep.dys.IMI.cow.p1  1.79 0.533 Inf    1   1.946
 ##  p.value
 ##   0.5282
 ##   0.0004
@@ -11109,7 +11102,7 @@ summary(nhscc_8_adj)</code></pre>
 ## as.factor(strep.dys.IMI.cow.p)2 2.3068076 1.5001274 3.547273
 ## calving.sau1                    2.6943966 1.9934842 3.641751
 ## calving.nas1                    1.2669739 0.9484513 1.692467</code></pre>
-<pre class="r"><code>emmeans_p8 &lt;- emmeans(nhscc_8_adj,pairwise~strep.dys.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p8 &lt;- emmeans(nhscc_8_adj,revpairwise~strep.dys.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_8_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -11130,10 +11123,10 @@ performance::icc(nhscc_8_adj)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                                    ratio     SE  df null z.ratio
-##  strep.dys.IMI.cow.p0 / strep.dys.IMI.cow.p1 0.775 0.1837 Inf    1  -1.077
-##  strep.dys.IMI.cow.p0 / strep.dys.IMI.cow.p2 0.433 0.0952 Inf    1  -3.807
-##  strep.dys.IMI.cow.p1 / strep.dys.IMI.cow.p2 0.560 0.1669 Inf    1  -1.946
+##  contrast                                    ratio    SE  df null z.ratio
+##  strep.dys.IMI.cow.p1 / strep.dys.IMI.cow.p0  1.29 0.306 Inf    1   1.077
+##  strep.dys.IMI.cow.p2 / strep.dys.IMI.cow.p0  2.31 0.506 Inf    1   3.807
+##  strep.dys.IMI.cow.p2 / strep.dys.IMI.cow.p1  1.79 0.533 Inf    1   1.946
 ##  p.value
 ##   0.5282
 ##   0.0004
@@ -11207,7 +11200,7 @@ summary(nhscc_9)</code></pre>
 ## a.(..IMI..)2 -0.042  0.065                            
 ## calving.sa1  -0.187  0.027        0.060               
 ## calving.ns1  -0.205  0.126       -0.052        0.229</code></pre>
-<pre class="r"><code>emmeans(nhscc_9,pairwise~strep.sp.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_9,revpairwise~strep.sp.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  strep.sp.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                      1.55 0.397 Inf     0.934      2.56
@@ -11220,9 +11213,9 @@ summary(nhscc_9)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                  ratio    SE  df null z.ratio p.value
-##  strep.sp.IMI.cow.p0 / strep.sp.IMI.cow.p1 0.747 0.179 Inf    1  -1.215  0.4441
-##  strep.sp.IMI.cow.p0 / strep.sp.IMI.cow.p2 0.576 0.197 Inf    1  -1.615  0.2391
-##  strep.sp.IMI.cow.p1 / strep.sp.IMI.cow.p2 0.771 0.312 Inf    1  -0.644  0.7957
+##  strep.sp.IMI.cow.p1 / strep.sp.IMI.cow.p0  1.34 0.321 Inf    1   1.215  0.4441
+##  strep.sp.IMI.cow.p2 / strep.sp.IMI.cow.p0  1.74 0.594 Inf    1   1.615  0.2391
+##  strep.sp.IMI.cow.p2 / strep.sp.IMI.cow.p1  1.30 0.525 Inf    1   0.644  0.7957
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -11273,7 +11266,7 @@ summary(nhscc_9_adj)</code></pre>
 ## as.factor(strep.sp.IMI.cow.p)2 1.7369940 0.8888747 3.394346
 ## calving.sau1                   2.5246724 1.8598883 3.427072
 ## calving.nas1                   1.1323541 0.8441769 1.518906</code></pre>
-<pre class="r"><code>emmeans_p9 &lt;- emmeans(nhscc_9_adj,pairwise~strep.sp.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p9 &lt;- emmeans(nhscc_9_adj,revpairwise~strep.sp.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_9_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -11295,9 +11288,9 @@ performance::icc(nhscc_9_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                  ratio    SE  df null z.ratio p.value
-##  strep.sp.IMI.cow.p0 / strep.sp.IMI.cow.p1 0.747 0.179 Inf    1  -1.215  0.4441
-##  strep.sp.IMI.cow.p0 / strep.sp.IMI.cow.p2 0.576 0.197 Inf    1  -1.615  0.2391
-##  strep.sp.IMI.cow.p1 / strep.sp.IMI.cow.p2 0.771 0.312 Inf    1  -0.644  0.7957
+##  strep.sp.IMI.cow.p1 / strep.sp.IMI.cow.p0  1.34 0.321 Inf    1   1.215  0.4441
+##  strep.sp.IMI.cow.p2 / strep.sp.IMI.cow.p0  1.74 0.594 Inf    1   1.615  0.2391
+##  strep.sp.IMI.cow.p2 / strep.sp.IMI.cow.p1  1.30 0.525 Inf    1   0.644  0.7957
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -11366,7 +11359,7 @@ summary(nhscc_10)</code></pre>
 ## a.(..IMI..)2 -0.070  0.108                            
 ## calving.sa1  -0.184  0.042        0.091               
 ## calving.ns1  -0.195  0.029        0.037        0.234</code></pre>
-<pre class="r"><code>emmeans(nhscc_10,pairwise~strep.like.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_10,revpairwise~strep.like.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  strep.like.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                        1.60 0.431 Inf     0.942      2.71
@@ -11379,9 +11372,9 @@ summary(nhscc_10)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                      ratio    SE  df null z.ratio
-##  strep.like.IMI.cow.p0 / strep.like.IMI.cow.p1 1.061 0.232 Inf    1   0.270
-##  strep.like.IMI.cow.p0 / strep.like.IMI.cow.p2 0.661 0.285 Inf    1  -0.960
-##  strep.like.IMI.cow.p1 / strep.like.IMI.cow.p2 0.623 0.288 Inf    1  -1.024
+##  strep.like.IMI.cow.p1 / strep.like.IMI.cow.p0 0.943 0.206 Inf    1  -0.270
+##  strep.like.IMI.cow.p2 / strep.like.IMI.cow.p0 1.514 0.653 Inf    1   0.960
+##  strep.like.IMI.cow.p2 / strep.like.IMI.cow.p1 1.605 0.742 Inf    1   1.024
 ##  p.value
 ##   0.9606
 ##   0.6022
@@ -11435,7 +11428,7 @@ summary(nhscc_10_adj)</code></pre>
 ## as.factor(strep.like.IMI.cow.p)2 1.5135138 0.6494200 3.527339
 ## calving.sau1                     2.5163938 1.8461894 3.429896
 ## calving.nas1                     1.1283826 0.8412534 1.513512</code></pre>
-<pre class="r"><code>emmeans(nhscc_10_adj,pairwise~strep.like.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_10_adj,revpairwise~strep.like.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  strep.like.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                        1.60 0.431 Inf     0.942      2.71
@@ -11448,9 +11441,9 @@ summary(nhscc_10_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                      ratio    SE  df null z.ratio
-##  strep.like.IMI.cow.p0 / strep.like.IMI.cow.p1 1.061 0.232 Inf    1   0.270
-##  strep.like.IMI.cow.p0 / strep.like.IMI.cow.p2 0.661 0.285 Inf    1  -0.960
-##  strep.like.IMI.cow.p1 / strep.like.IMI.cow.p2 0.623 0.288 Inf    1  -1.024
+##  strep.like.IMI.cow.p1 / strep.like.IMI.cow.p0 0.943 0.206 Inf    1  -0.270
+##  strep.like.IMI.cow.p2 / strep.like.IMI.cow.p0 1.514 0.653 Inf    1   0.960
+##  strep.like.IMI.cow.p2 / strep.like.IMI.cow.p1 1.605 0.742 Inf    1   1.024
 ##  p.value
 ##   0.9606
 ##   0.6022
@@ -11459,7 +11452,7 @@ summary(nhscc_10_adj)</code></pre>
 ## Results are averaged over the levels of: calving.sau, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
-<pre class="r"><code>emmeans_p10 &lt;- emmeans(nhscc_10_adj,pairwise~strep.like.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p10 &lt;- emmeans(nhscc_10_adj,revpairwise~strep.like.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_10_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -11481,9 +11474,9 @@ performance::icc(nhscc_10_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                      ratio    SE  df null z.ratio
-##  strep.like.IMI.cow.p0 / strep.like.IMI.cow.p1 1.061 0.232 Inf    1   0.270
-##  strep.like.IMI.cow.p0 / strep.like.IMI.cow.p2 0.661 0.285 Inf    1  -0.960
-##  strep.like.IMI.cow.p1 / strep.like.IMI.cow.p2 0.623 0.288 Inf    1  -1.024
+##  strep.like.IMI.cow.p1 / strep.like.IMI.cow.p0 0.943 0.206 Inf    1  -0.270
+##  strep.like.IMI.cow.p2 / strep.like.IMI.cow.p0 1.514 0.653 Inf    1   0.960
+##  strep.like.IMI.cow.p2 / strep.like.IMI.cow.p1 1.605 0.742 Inf    1   1.024
 ##  p.value
 ##   0.9606
 ##   0.6022
@@ -11555,7 +11548,7 @@ summary(nhscc_11)</code></pre>
 ## a.(..IMI..)2 -0.051  0.129                            
 ## calving.sa1  -0.166  0.004        0.044               
 ## calving.ns1  -0.182  0.062       -0.002        0.229</code></pre>
-<pre class="r"><code>emmeans(nhscc_11,pairwise~enterococcus.spp.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_11,revpairwise~enterococcus.spp.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  enterococcus.spp.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                              1.53 0.439 Inf     0.875      2.69
@@ -11568,13 +11561,13 @@ summary(nhscc_11)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                                  ratio    SE  df null
-##  enterococcus.spp.IMI.cow.p0 / enterococcus.spp.IMI.cow.p1 0.817 0.225 Inf    1
-##  enterococcus.spp.IMI.cow.p0 / enterococcus.spp.IMI.cow.p2 0.269 0.139 Inf    1
-##  enterococcus.spp.IMI.cow.p1 / enterococcus.spp.IMI.cow.p2 0.329 0.182 Inf    1
+##  enterococcus.spp.IMI.cow.p1 / enterococcus.spp.IMI.cow.p0  1.22 0.337 Inf    1
+##  enterococcus.spp.IMI.cow.p2 / enterococcus.spp.IMI.cow.p0  3.72 1.926 Inf    1
+##  enterococcus.spp.IMI.cow.p2 / enterococcus.spp.IMI.cow.p1  3.04 1.683 Inf    1
 ##  z.ratio p.value
-##   -0.735  0.7424
-##   -2.537  0.0301
-##   -2.004  0.1111
+##    0.735  0.7424
+##    2.537  0.0301
+##    2.004  0.1111
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -11624,7 +11617,7 @@ summary(nhscc_11_adj)</code></pre>
 ## as.factor(enterococcus.spp.IMI.cow.p)2 3.719362 1.3480414 10.262041
 ## calving.sau1                           2.525117 1.8637665  3.421145
 ## calving.nas1                           1.119863 0.8368859  1.498523</code></pre>
-<pre class="r"><code>emmeans_p11 &lt;- emmeans(nhscc_11_adj,pairwise~enterococcus.spp.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p11 &lt;- emmeans(nhscc_11_adj,revpairwise~enterococcus.spp.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_11_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -11646,13 +11639,13 @@ performance::icc(nhscc_11_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                                                  ratio    SE  df null
-##  enterococcus.spp.IMI.cow.p0 / enterococcus.spp.IMI.cow.p1 0.817 0.225 Inf    1
-##  enterococcus.spp.IMI.cow.p0 / enterococcus.spp.IMI.cow.p2 0.269 0.139 Inf    1
-##  enterococcus.spp.IMI.cow.p1 / enterococcus.spp.IMI.cow.p2 0.329 0.182 Inf    1
+##  enterococcus.spp.IMI.cow.p1 / enterococcus.spp.IMI.cow.p0  1.22 0.337 Inf    1
+##  enterococcus.spp.IMI.cow.p2 / enterococcus.spp.IMI.cow.p0  3.72 1.926 Inf    1
+##  enterococcus.spp.IMI.cow.p2 / enterococcus.spp.IMI.cow.p1  3.04 1.683 Inf    1
 ##  z.ratio p.value
-##   -0.735  0.7424
-##   -2.537  0.0301
-##   -2.004  0.1111
+##    0.735  0.7424
+##    2.537  0.0301
+##    2.004  0.1111
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -11724,7 +11717,7 @@ summary(nhscc_12)</code></pre>
 ## a.(..IMI.)1 -0.075              
 ## clvng.s.ss1 -0.301  0.009       
 ## calving.ns1 -0.236 -0.052  0.283</code></pre>
-<pre class="r"><code>emmeans(nhscc_12,pairwise~gram.neg.IMI.cow,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_12,revpairwise~gram.neg.IMI.cow,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  gram.neg.IMI.cow response    SE  df asymp.LCL asymp.UCL
 ##  0                    1.37 0.331 Inf     0.856      2.20
@@ -11736,7 +11729,7 @@ summary(nhscc_12)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                              ratio    SE  df null z.ratio p.value
-##  gram.neg.IMI.cow0 / gram.neg.IMI.cow1 0.991 0.256 Inf    1  -0.036  0.9709
+##  gram.neg.IMI.cow1 / gram.neg.IMI.cow0  1.01 0.261 Inf    1   0.036  0.9709
 ## 
 ## Results are averaged over the levels of: calving.sau.sslo, calving.nas 
 ## Tests are performed on the log scale</code></pre>
@@ -11782,7 +11775,7 @@ summary(nhscc_12_adj)</code></pre>
 ## as.factor(gram.neg.IMI.cow)1 1.009451 0.6087179 1.673996
 ## calving.sau.sslo1            2.585940 1.9444755 3.439018
 ## calving.nas1                 1.198564 0.8904666 1.613262</code></pre>
-<pre class="r"><code>emmeans_p12 &lt;- emmeans(nhscc_12_adj,pairwise~gram.neg.IMI.cow,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p12 &lt;- emmeans(nhscc_12_adj,revpairwise~gram.neg.IMI.cow,type=&quot;response&quot;)
 
 performance::icc(nhscc_12_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -11803,7 +11796,7 @@ performance::icc(nhscc_12_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                              ratio    SE  df null z.ratio p.value
-##  gram.neg.IMI.cow0 / gram.neg.IMI.cow1 0.991 0.256 Inf    1  -0.036  0.9709
+##  gram.neg.IMI.cow1 / gram.neg.IMI.cow0  1.01 0.261 Inf    1   0.036  0.9709
 ## 
 ## Results are averaged over the levels of: calving.sau.sslo, calving.nas 
 ## Tests are performed on the log scale</code></pre>
@@ -11865,7 +11858,7 @@ summary(nhscc_13)</code></pre>
 ##             (Intr) a.(.IMI..)1
 ## a.(.IMI..)1 -0.142            
 ## a.(.IMI..)2 -0.082  0.205</code></pre>
-<pre class="r"><code>emmeans(nhscc_13,pairwise~other.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_13,revpairwise~other.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  other.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                  1.445 0.437 Inf     0.800      2.61
@@ -11877,9 +11870,9 @@ summary(nhscc_13)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                            ratio    SE  df null z.ratio p.value
-##  other.IMI.cow.p0 / other.IMI.cow.p1  1.51 0.263 Inf    1   2.378  0.0458
-##  other.IMI.cow.p0 / other.IMI.cow.p2  3.59 1.449 Inf    1   3.164  0.0044
-##  other.IMI.cow.p1 / other.IMI.cow.p2  2.37 0.963 Inf    1   2.132  0.0835
+##  other.IMI.cow.p1 / other.IMI.cow.p0 0.662 0.115 Inf    1  -2.378  0.0458
+##  other.IMI.cow.p2 / other.IMI.cow.p0 0.279 0.113 Inf    1  -3.164  0.0044
+##  other.IMI.cow.p2 / other.IMI.cow.p1 0.421 0.171 Inf    1  -2.132  0.0835
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -11928,7 +11921,7 @@ summary(nhscc_13_adj)</code></pre>
 ## as.factor(other.IMI.cow.p)2 0.2865261 0.1324087 0.6200288
 ## calving.sau.sslo1           2.5492857 1.9229319 3.3796607
 ## calving.nas1                1.1107451 0.8285444 1.4890630</code></pre>
-<pre class="r"><code>emmeans_p13 &lt;- emmeans(nhscc_13_adj,pairwise~other.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p13 &lt;- emmeans(nhscc_13_adj,revpairwise~other.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_13_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -11950,9 +11943,9 @@ performance::icc(nhscc_13_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                            ratio    SE  df null z.ratio p.value
-##  other.IMI.cow.p0 / other.IMI.cow.p1  1.53 0.252 Inf    1   2.585  0.0263
-##  other.IMI.cow.p0 / other.IMI.cow.p2  3.49 1.375 Inf    1   3.174  0.0043
-##  other.IMI.cow.p1 / other.IMI.cow.p2  2.28 0.901 Inf    1   2.087  0.0925
+##  other.IMI.cow.p1 / other.IMI.cow.p0 0.654 0.108 Inf    1  -2.585  0.0263
+##  other.IMI.cow.p2 / other.IMI.cow.p0 0.287 0.113 Inf    1  -3.174  0.0043
+##  other.IMI.cow.p2 / other.IMI.cow.p1 0.438 0.173 Inf    1  -2.087  0.0925
 ## 
 ## Results are averaged over the levels of: calving.sau.sslo, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -12017,7 +12010,7 @@ summary(nhscc_14)</code></pre>
 ##             (Intr) a.(.IMI..)1
 ## a.(.IMI..)1 -0.090            
 ## a.(.IMI..)2 -0.031  0.073</code></pre>
-<pre class="r"><code>emmeans(nhscc_14,pairwise~bacillus.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_14,revpairwise~bacillus.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  bacillus.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                     1.377 0.430 Inf    0.7466     2.541
@@ -12028,10 +12021,14 @@ summary(nhscc_14)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                                  ratio    SE  df null z.ratio p.value
-##  bacillus.IMI.cow.p0 / bacillus.IMI.cow.p1  1.62 0.328 Inf    1   2.395  0.0439
-##  bacillus.IMI.cow.p0 / bacillus.IMI.cow.p2  8.52 6.399 Inf    1   2.852  0.0121
-##  bacillus.IMI.cow.p1 / bacillus.IMI.cow.p2  5.25 4.007 Inf    1   2.171  0.0762
+##  contrast                                  ratio     SE  df null z.ratio
+##  bacillus.IMI.cow.p1 / bacillus.IMI.cow.p0 0.616 0.1246 Inf    1  -2.395
+##  bacillus.IMI.cow.p2 / bacillus.IMI.cow.p0 0.117 0.0882 Inf    1  -2.852
+##  bacillus.IMI.cow.p2 / bacillus.IMI.cow.p1 0.191 0.1455 Inf    1  -2.171
+##  p.value
+##   0.0439
+##   0.0121
+##   0.0762
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -12079,7 +12076,7 @@ summary(nhscc_14_adj)</code></pre>
 ## as.factor(bacillus.IMI.cow.p)2 0.1526262 0.03554457 0.6553672
 ## calving.sau.sslo1              2.4396176 1.83839958 3.2374541
 ## calving.nas1                   1.1204937 0.83442989 1.5046273</code></pre>
-<pre class="r"><code>emmeans_p14 &lt;- emmeans(nhscc_14_adj,pairwise~bacillus.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p14 &lt;- emmeans(nhscc_14_adj,revpairwise~bacillus.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_14_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -12100,10 +12097,10 @@ performance::icc(nhscc_14_adj)</code></pre>
 ## Intervals are back-transformed from the log scale 
 ## 
 ## $contrasts
-##  contrast                                  ratio   SE  df null z.ratio p.value
-##  bacillus.IMI.cow.p0 / bacillus.IMI.cow.p1  1.56 0.30 Inf    1   2.295  0.0565
-##  bacillus.IMI.cow.p0 / bacillus.IMI.cow.p2  6.55 4.87 Inf    1   2.528  0.0308
-##  bacillus.IMI.cow.p1 / bacillus.IMI.cow.p2  4.21 3.18 Inf    1   1.907  0.1366
+##  contrast                                  ratio    SE  df null z.ratio p.value
+##  bacillus.IMI.cow.p1 / bacillus.IMI.cow.p0 0.643 0.124 Inf    1  -2.295  0.0565
+##  bacillus.IMI.cow.p2 / bacillus.IMI.cow.p0 0.153 0.113 Inf    1  -2.528  0.0308
+##  bacillus.IMI.cow.p2 / bacillus.IMI.cow.p1 0.237 0.179 Inf    1  -1.907  0.1366
 ## 
 ## Results are averaged over the levels of: calving.sau.sslo, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
@@ -12167,7 +12164,7 @@ summary(nhscc_15)</code></pre>
 ##             (Intr) a.(.IMI..)1
 ## a.(.IMI..)1 -0.085            
 ## a.(.IMI..)2 -0.048  0.137</code></pre>
-<pre class="r"><code>emmeans(nhscc_15,pairwise~coryne.IMI.cow.p,type=&quot;response&quot;)</code></pre>
+<pre class="r"><code>emmeans(nhscc_15,revpairwise~coryne.IMI.cow.p,type=&quot;response&quot;)</code></pre>
 <pre><code>## $emmeans
 ##  coryne.IMI.cow.p response    SE  df asymp.LCL asymp.UCL
 ##  0                    1.25 0.412 Inf     0.657      2.39
@@ -12179,9 +12176,9 @@ summary(nhscc_15)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                              ratio    SE  df null z.ratio p.value
-##  coryne.IMI.cow.p0 / coryne.IMI.cow.p1  1.03 0.258 Inf    1   0.121  0.9920
-##  coryne.IMI.cow.p0 / coryne.IMI.cow.p2  1.63 0.892 Inf    1   0.887  0.6483
-##  coryne.IMI.cow.p1 / coryne.IMI.cow.p2  1.58 0.901 Inf    1   0.799  0.7035
+##  coryne.IMI.cow.p1 / coryne.IMI.cow.p0 0.970 0.243 Inf    1  -0.121  0.9920
+##  coryne.IMI.cow.p2 / coryne.IMI.cow.p0 0.615 0.337 Inf    1  -0.887  0.6483
+##  coryne.IMI.cow.p2 / coryne.IMI.cow.p1 0.634 0.362 Inf    1  -0.799  0.7035
 ## 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
 ## Tests are performed on the log scale</code></pre>
@@ -12230,7 +12227,7 @@ summary(nhscc_15_adj)</code></pre>
 ## as.factor(coryne.IMI.cow.p)2 0.5371962 0.1879744 1.535208
 ## calving.sau.sslo1            2.6051661 1.9581459 3.465978
 ## calving.nas1                 1.1869986 0.8817114 1.597990</code></pre>
-<pre class="r"><code>emmeans_p15 &lt;- emmeans(nhscc_15_adj,pairwise~coryne.IMI.cow.p,type=&quot;response&quot;)
+<pre class="r"><code>emmeans_p15 &lt;- emmeans(nhscc_15_adj,revpairwise~coryne.IMI.cow.p,type=&quot;response&quot;)
 
 performance::icc(nhscc_15_adj)</code></pre>
 <pre><code>## Warning: mu of 1.2 is too close to zero, estimate of random effect variances may
@@ -12252,9 +12249,9 @@ performance::icc(nhscc_15_adj)</code></pre>
 ## 
 ## $contrasts
 ##  contrast                              ratio    SE  df null z.ratio p.value
-##  coryne.IMI.cow.p0 / coryne.IMI.cow.p1  1.04 0.248 Inf    1   0.150  0.9877
-##  coryne.IMI.cow.p0 / coryne.IMI.cow.p2  1.86 0.997 Inf    1   1.160  0.4773
-##  coryne.IMI.cow.p1 / coryne.IMI.cow.p2  1.80 0.996 Inf    1   1.056  0.5417
+##  coryne.IMI.cow.p1 / coryne.IMI.cow.p0 0.965 0.231 Inf    1  -0.150  0.9877
+##  coryne.IMI.cow.p2 / coryne.IMI.cow.p0 0.537 0.288 Inf    1  -1.160  0.4773
+##  coryne.IMI.cow.p2 / coryne.IMI.cow.p1 0.557 0.309 Inf    1  -1.056  0.5417
 ## 
 ## Results are averaged over the levels of: calving.sau.sslo, calving.nas 
 ## P value adjustment: tukey method for comparing a family of 3 estimates 
