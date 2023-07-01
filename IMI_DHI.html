@@ -5878,1257 +5878,11 @@ plot(p)</code></pre>
 <div id="ca-milk-production" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> CA: Milk
 production</h2>
-<pre class="r"><code># ---- Milk production by IMI -----
-
-
-table1(~IMI.cow + staph.aureus.IMI.cow + nas.IMI.cow + sch.IMI.cow + nas.non.chrom.IMI.cow + staph.epidermidis.IMI.cow + staph.haemolyticus.IMI.cow + staph.hominis.IMI.cow + staph.sciuri.IMI.cow + staph.xylosus.saprophyticus.IMI.cow + staph.spp.IMI.cow + strep.IMI.cow + strep.genus.IMI.cow + strep.uberis.IMI.cow + strep.dys.IMI.cow + strep.sp.IMI.cow + strep.like.IMI.cow + aerococcus.spp.IMI.cow + aero.vir.IMI.cow + aero.spp.IMI.cow + enterococcus.spp.IMI.cow + entero.cass.IMI.cow + entero.hyr.IMI.cow + entero.mun.IMI.cow + entero.spp.IMI.cow + entero.fae.IMI.cow + entero.sac.IMI.cow + lactococcus.spp.IMI.cow + lact.garv.IMI.cow + lact.lact.IMI.cow + lact.spp.IMI.cow + micro.spp.IMI.cow + gram.neg.IMI.cow + escherichia.spp.IMI.cow + kleb.IMI.cow + pseud.IMI.cow + citr.IMI.cow + enterobacter.genus.IMI.cow + gram.neg.org.IMI.cow + pantoea.IMI.cow + serratia.IMI.cow + other.IMI.cow + arthro.gand.IMI.cow + arthro.spp.IMI.cow + bacillus.IMI.cow + coryne.IMI.cow + gram.pos.cocci.IMI.cow + gram.pos.rod.IMI.cow + helcoccus.IMI.cow + trueperella.IMI.cow + yeast.IMI.cow |Site , data = df_dhi_cow)</code></pre>
-<div class="Rtable1"><table class="Rtable1">
-<thead>
-<tr>
-<th class="rowlabel firstrow lastrow"></th>
-<th class="firstrow lastrow"><span class="stratlabel">A<br><span class="stratn">(N=49)</span></span></th>
-<th class="firstrow lastrow"><span class="stratlabel">B<br><span class="stratn">(N=116)</span></span></th>
-<th class="firstrow lastrow"><span class="stratlabel">C<br><span class="stratn">(N=105)</span></span></th>
-<th class="firstrow lastrow"><span class="stratlabel">E<br><span class="stratn">(N=63)</span></span></th>
-<th class="firstrow lastrow"><span class="stratlabel">Overall<br><span class="stratn">(N=333)</span></span></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="rowlabel firstrow">IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>26 (53.1%)</td>
-<td>10 (8.6%)</td>
-<td>5 (4.8%)</td>
-<td>0 (0%)</td>
-<td>41 (12.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">23 (46.9%)</td>
-<td class="lastrow">106 (91.4%)</td>
-<td class="lastrow">100 (95.2%)</td>
-<td class="lastrow">63 (100%)</td>
-<td class="lastrow">292 (87.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">staph.aureus.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>44 (89.8%)</td>
-<td>84 (72.4%)</td>
-<td>95 (90.5%)</td>
-<td>37 (58.7%)</td>
-<td>260 (78.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">5 (10.2%)</td>
-<td class="lastrow">32 (27.6%)</td>
-<td class="lastrow">10 (9.5%)</td>
-<td class="lastrow">26 (41.3%)</td>
-<td class="lastrow">73 (21.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">nas.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>35 (71.4%)</td>
-<td>46 (39.7%)</td>
-<td>62 (59.0%)</td>
-<td>23 (36.5%)</td>
-<td>166 (49.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">14 (28.6%)</td>
-<td class="lastrow">70 (60.3%)</td>
-<td class="lastrow">43 (41.0%)</td>
-<td class="lastrow">40 (63.5%)</td>
-<td class="lastrow">167 (50.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">sch.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>37 (75.5%)</td>
-<td>68 (58.6%)</td>
-<td>73 (69.5%)</td>
-<td>34 (54.0%)</td>
-<td>212 (63.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">12 (24.5%)</td>
-<td class="lastrow">48 (41.4%)</td>
-<td class="lastrow">32 (30.5%)</td>
-<td class="lastrow">29 (46.0%)</td>
-<td class="lastrow">121 (36.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">nas.non.chrom.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>46 (93.9%)</td>
-<td>82 (70.7%)</td>
-<td>92 (87.6%)</td>
-<td>40 (63.5%)</td>
-<td>260 (78.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">3 (6.1%)</td>
-<td class="lastrow">34 (29.3%)</td>
-<td class="lastrow">13 (12.4%)</td>
-<td class="lastrow">23 (36.5%)</td>
-<td class="lastrow">73 (21.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">staph.epidermidis.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>105 (100%)</td>
-<td>63 (100%)</td>
-<td>333 (100%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">staph.haemolyticus.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>113 (97.4%)</td>
-<td>104 (99.0%)</td>
-<td>61 (96.8%)</td>
-<td>327 (98.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.6%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">2 (3.2%)</td>
-<td class="lastrow">6 (1.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">staph.hominis.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>105 (100%)</td>
-<td>62 (98.4%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.6%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">staph.sciuri.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>105 (100%)</td>
-<td>59 (93.7%)</td>
-<td>329 (98.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">4 (6.3%)</td>
-<td class="lastrow">4 (1.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">staph.xylosus.saprophyticus.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>104 (99.0%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">staph.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>46 (93.9%)</td>
-<td>84 (72.4%)</td>
-<td>94 (89.5%)</td>
-<td>44 (69.8%)</td>
-<td>268 (80.5%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">3 (6.1%)</td>
-<td class="lastrow">32 (27.6%)</td>
-<td class="lastrow">11 (10.5%)</td>
-<td class="lastrow">19 (30.2%)</td>
-<td class="lastrow">65 (19.5%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">strep.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>45 (91.8%)</td>
-<td>81 (69.8%)</td>
-<td>61 (58.1%)</td>
-<td>25 (39.7%)</td>
-<td>212 (63.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">4 (8.2%)</td>
-<td class="lastrow">35 (30.2%)</td>
-<td class="lastrow">44 (41.9%)</td>
-<td class="lastrow">38 (60.3%)</td>
-<td class="lastrow">121 (36.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">strep.genus.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>87 (75.0%)</td>
-<td>96 (91.4%)</td>
-<td>35 (55.6%)</td>
-<td>266 (79.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">29 (25.0%)</td>
-<td class="lastrow">9 (8.6%)</td>
-<td class="lastrow">28 (44.4%)</td>
-<td class="lastrow">67 (20.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">strep.uberis.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>105 (100%)</td>
-<td>54 (85.7%)</td>
-<td>324 (97.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">9 (14.3%)</td>
-<td class="lastrow">9 (2.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">strep.dys.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>91 (78.4%)</td>
-<td>103 (98.1%)</td>
-<td>48 (76.2%)</td>
-<td>290 (87.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">25 (21.6%)</td>
-<td class="lastrow">2 (1.9%)</td>
-<td class="lastrow">15 (23.8%)</td>
-<td class="lastrow">43 (12.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">strep.sp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>103 (88.8%)</td>
-<td>97 (92.4%)</td>
-<td>53 (84.1%)</td>
-<td>302 (90.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">13 (11.2%)</td>
-<td class="lastrow">8 (7.6%)</td>
-<td class="lastrow">10 (15.9%)</td>
-<td class="lastrow">31 (9.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">strep.like.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>46 (93.9%)</td>
-<td>110 (94.8%)</td>
-<td>66 (62.9%)</td>
-<td>51 (81.0%)</td>
-<td>273 (82.0%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">3 (6.1%)</td>
-<td class="lastrow">6 (5.2%)</td>
-<td class="lastrow">39 (37.1%)</td>
-<td class="lastrow">12 (19.0%)</td>
-<td class="lastrow">60 (18.0%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">aerococcus.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>47 (95.9%)</td>
-<td>116 (100%)</td>
-<td>102 (97.1%)</td>
-<td>54 (85.7%)</td>
-<td>319 (95.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">2 (4.1%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.9%)</td>
-<td class="lastrow">9 (14.3%)</td>
-<td class="lastrow">14 (4.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">aero.vir.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>116 (100%)</td>
-<td>102 (97.1%)</td>
-<td>56 (88.9%)</td>
-<td>322 (96.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.9%)</td>
-<td class="lastrow">7 (11.1%)</td>
-<td class="lastrow">11 (3.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">aero.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>116 (100%)</td>
-<td>105 (100%)</td>
-<td>60 (95.2%)</td>
-<td>329 (98.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (4.8%)</td>
-<td class="lastrow">4 (1.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">enterococcus.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>111 (95.7%)</td>
-<td>72 (68.6%)</td>
-<td>62 (98.4%)</td>
-<td>294 (88.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">5 (4.3%)</td>
-<td class="lastrow">33 (31.4%)</td>
-<td class="lastrow">1 (1.6%)</td>
-<td class="lastrow">39 (11.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">entero.cass.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>115 (99.1%)</td>
-<td>94 (89.5%)</td>
-<td>63 (100%)</td>
-<td>321 (96.4%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">11 (10.5%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">12 (3.6%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">entero.hyr.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>97 (92.4%)</td>
-<td>63 (100%)</td>
-<td>325 (97.6%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">8 (7.6%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">8 (2.4%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">entero.mun.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>115 (99.1%)</td>
-<td>96 (91.4%)</td>
-<td>63 (100%)</td>
-<td>323 (97.0%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">9 (8.6%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">10 (3.0%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">entero.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>113 (97.4%)</td>
-<td>95 (90.5%)</td>
-<td>62 (98.4%)</td>
-<td>319 (95.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.6%)</td>
-<td class="lastrow">10 (9.5%)</td>
-<td class="lastrow">1 (1.6%)</td>
-<td class="lastrow">14 (4.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">entero.fae.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>104 (99.0%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">entero.sac.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>104 (99.0%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">lactococcus.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>116 (100%)</td>
-<td>101 (96.2%)</td>
-<td>63 (100%)</td>
-<td>328 (98.5%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">4 (3.8%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">5 (1.5%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">lact.garv.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>116 (100%)</td>
-<td>103 (98.1%)</td>
-<td>63 (100%)</td>
-<td>330 (99.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">2 (1.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (0.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">lact.lact.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>104 (99.0%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">lact.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>104 (99.0%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">micro.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>115 (99.1%)</td>
-<td>104 (99.0%)</td>
-<td>61 (96.8%)</td>
-<td>329 (98.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">2 (3.2%)</td>
-<td class="lastrow">4 (1.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">gram.neg.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>110 (94.8%)</td>
-<td>83 (79.0%)</td>
-<td>60 (95.2%)</td>
-<td>302 (90.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">6 (5.2%)</td>
-<td class="lastrow">22 (21.0%)</td>
-<td class="lastrow">3 (4.8%)</td>
-<td class="lastrow">31 (9.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">escherichia.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>112 (96.6%)</td>
-<td>101 (96.2%)</td>
-<td>61 (96.8%)</td>
-<td>323 (97.0%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">4 (3.4%)</td>
-<td class="lastrow">4 (3.8%)</td>
-<td class="lastrow">2 (3.2%)</td>
-<td class="lastrow">10 (3.0%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">kleb.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>102 (97.1%)</td>
-<td>63 (100%)</td>
-<td>330 (99.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (0.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">pseud.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>102 (97.1%)</td>
-<td>63 (100%)</td>
-<td>330 (99.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (0.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">citr.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>104 (99.0%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">enterobacter.genus.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>104 (99.0%)</td>
-<td>62 (98.4%)</td>
-<td>331 (99.4%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">1 (1.6%)</td>
-<td class="lastrow">2 (0.6%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">gram.neg.org.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>115 (99.1%)</td>
-<td>102 (97.1%)</td>
-<td>63 (100%)</td>
-<td>329 (98.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">3 (2.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">4 (1.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">pantoea.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>102 (97.1%)</td>
-<td>63 (100%)</td>
-<td>330 (99.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (0.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">serratia.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>102 (97.1%)</td>
-<td>63 (100%)</td>
-<td>330 (99.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (0.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">other.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>46 (93.9%)</td>
-<td>82 (70.7%)</td>
-<td>30 (28.6%)</td>
-<td>51 (81.0%)</td>
-<td>209 (62.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">3 (6.1%)</td>
-<td class="lastrow">34 (29.3%)</td>
-<td class="lastrow">75 (71.4%)</td>
-<td class="lastrow">12 (19.0%)</td>
-<td class="lastrow">124 (37.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">arthro.gand.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>115 (99.1%)</td>
-<td>104 (99.0%)</td>
-<td>63 (100%)</td>
-<td>331 (99.4%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">1 (1.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">2 (0.6%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">arthro.spp.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>115 (99.1%)</td>
-<td>105 (100%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">bacillus.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>98 (84.5%)</td>
-<td>54 (51.4%)</td>
-<td>53 (84.1%)</td>
-<td>254 (76.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">18 (15.5%)</td>
-<td class="lastrow">51 (48.6%)</td>
-<td class="lastrow">10 (15.9%)</td>
-<td class="lastrow">79 (23.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">coryne.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>106 (91.4%)</td>
-<td>63 (60.0%)</td>
-<td>63 (100%)</td>
-<td>280 (84.1%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">10 (8.6%)</td>
-<td class="lastrow">42 (40.0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">53 (15.9%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">gram.pos.cocci.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>113 (97.4%)</td>
-<td>94 (89.5%)</td>
-<td>63 (100%)</td>
-<td>319 (95.8%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">3 (2.6%)</td>
-<td class="lastrow">11 (10.5%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">14 (4.2%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">gram.pos.rod.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>115 (99.1%)</td>
-<td>105 (100%)</td>
-<td>63 (100%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">helcoccus.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>116 (100%)</td>
-<td>105 (100%)</td>
-<td>62 (98.4%)</td>
-<td>332 (99.7%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">1 (1.6%)</td>
-<td class="lastrow">1 (0.3%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">trueperella.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>48 (98.0%)</td>
-<td>115 (99.1%)</td>
-<td>105 (100%)</td>
-<td>63 (100%)</td>
-<td>331 (99.4%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">1 (2.0%)</td>
-<td class="lastrow">1 (0.9%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">2 (0.6%)</td>
-</tr>
-<tr>
-<td class="rowlabel firstrow">yeast.IMI.cow</td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-<td class="firstrow"></td>
-</tr>
-<tr>
-<td class="rowlabel">0</td>
-<td>49 (100%)</td>
-<td>114 (98.3%)</td>
-<td>105 (100%)</td>
-<td>63 (100%)</td>
-<td>331 (99.4%)</td>
-</tr>
-<tr>
-<td class="rowlabel lastrow">1</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">2 (1.7%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">0 (0%)</td>
-<td class="lastrow">2 (0.6%)</td>
-</tr>
-</tbody>
-</table>
-</div>
-<pre class="r"><code># SAU, NAS, SCH, NAS-NON CHRO,HAEMO, STAPH SPP, SSLO, STREP GENUS, UBERIS, DYSGALACTIAE, UNSPECIATED STREP, STREP LIKE, AEROCOCCUS GENUS, AEROCOCCUS VIRIDANS, ENTEROCOCCUS GENUS, ENTEROCOCCUS CASS, ENTEROCOCOCCUS HYR, ENTEROCOCCUS MUN, ENTEROCOCCUS SP, LACTOCOCUS GENUS, GRAM NEGATIVE, OTHER, BACILLUS, CORYNE, OTHER COCCI, OTHER ROD
-
-
-# ---- Staph aureus  ----
+<pre class="r"><code># ---- Staph aureus  ----
 
 model_1 &lt;- lme(fixed =milk_kg~ staph.aureus.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_1,pairwise~staph.aureus.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_1,revpairwise~staph.aureus.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  staph.aureus.IMI.cow emmean   SE df lower.CL upper.CL
@@ -7166,44 +5920,44 @@ emmeans(model_1,pairwise~staph.aureus.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.2491 0.946 328  -0.263
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.2491 0.946 328   0.263
 ##  p.value
 ##   0.7924
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1   0.2048 0.931 328   0.220
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0  -0.2048 0.931 328  -0.220
 ##  p.value
 ##   0.8260
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1   0.0587 0.961 328   0.061
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0  -0.0587 0.961 328  -0.061
 ##  p.value
 ##   0.9513
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.1328 1.005 328  -0.132
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.1328 1.005 328   0.132
 ##  p.value
 ##   0.8950
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.1804 0.989 328  -0.182
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.1804 0.989 328   0.182
 ##  p.value
 ##   0.8554
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.4445 1.004 328  -0.443
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.4445 1.004 328   0.443
 ##  p.value
 ##   0.6582
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_1 &lt;- lme(fixed =milk_kg~ staph.aureus.IMI.cow*postpartum_sample+calving.nas+calving.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_1 &lt;- emmeans(model_1,pairwise~staph.aureus.IMI.cow|postpartum_sample)
+emmeans_1 &lt;- emmeans(model_1,revpairwise~staph.aureus.IMI.cow|postpartum_sample)
 
 emmeans_1 </code></pre>
 <pre><code>## $emmeans
@@ -7244,37 +5998,37 @@ emmeans_1 </code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.1080 0.951 326  -0.114
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.1080 0.951 326   0.114
 ##  p.value
 ##   0.9096
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1   0.3389 0.936 326   0.362
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0  -0.3389 0.936 326  -0.362
 ##  p.value
 ##   0.7176
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1   0.1828 0.966 326   0.189
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0  -0.1828 0.966 326  -0.189
 ##  p.value
 ##   0.8501
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.0142 1.011 326  -0.014
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.0142 1.011 326   0.014
 ##  p.value
 ##   0.9888
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.0700 0.995 326  -0.070
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.0700 0.995 326   0.070
 ##  p.value
 ##   0.9439
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                      estimate    SE  df t.ratio
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.3352 1.009 326  -0.332
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.3352 1.009 326   0.332
 ##  p.value
 ##   0.7400
 ## 
@@ -7319,39 +6073,39 @@ emmeans_1 </code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                      estimate    SE  df lower.CL
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.1080 0.951 326    -1.98
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.1080 0.951 326    -1.76
 ##  upper.CL
-##      1.76
+##      1.98
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                      estimate    SE  df lower.CL
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1   0.3389 0.936 326    -1.50
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0  -0.3389 0.936 326    -2.18
 ##  upper.CL
-##      2.18
+##      1.50
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                      estimate    SE  df lower.CL
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1   0.1828 0.966 326    -1.72
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0  -0.1828 0.966 326    -2.08
 ##  upper.CL
-##      2.08
+##      1.72
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                      estimate    SE  df lower.CL
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.0142 1.011 326    -2.00
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.0142 1.011 326    -1.97
 ##  upper.CL
-##      1.97
+##      2.00
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                      estimate    SE  df lower.CL
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.0700 0.995 326    -2.03
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.0700 0.995 326    -1.89
 ##  upper.CL
-##      1.89
+##      2.03
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                      estimate    SE  df lower.CL
-##  staph.aureus.IMI.cow0 - staph.aureus.IMI.cow1  -0.3352 1.009 326    -2.32
+##  staph.aureus.IMI.cow1 - staph.aureus.IMI.cow0   0.3352 1.009 326    -1.65
 ##  upper.CL
-##      1.65
+##      2.32
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sslo 
 ## Degrees-of-freedom method: containment 
@@ -7420,7 +6174,7 @@ Confint(model_1_adj_overall)</code></pre>
 
 model_2 &lt;- lme(fixed =milk~ nas.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_2,pairwise~nas.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_2,revpairwise~nas.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  nas.IMI.cow emmean   SE df lower.CL upper.CL
@@ -7458,32 +6212,32 @@ emmeans(model_2,pairwise~nas.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                    estimate   SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1   -2.619 1.71 328  -1.532  0.1264
+##  nas.IMI.cow1 - nas.IMI.cow0    2.619 1.71 328   1.532  0.1264
 ## 
 ## postpartum_sample = 2:
 ##  contrast                    estimate   SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1    1.290 1.71 328   0.754  0.4515
+##  nas.IMI.cow1 - nas.IMI.cow0   -1.290 1.71 328  -0.754  0.4515
 ## 
 ## postpartum_sample = 3:
 ##  contrast                    estimate   SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1    2.349 1.76 328   1.337  0.1822
+##  nas.IMI.cow1 - nas.IMI.cow0   -2.349 1.76 328  -1.337  0.1822
 ## 
 ## postpartum_sample = 4:
 ##  contrast                    estimate   SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1   -0.257 1.88 328  -0.136  0.8916
+##  nas.IMI.cow1 - nas.IMI.cow0    0.257 1.88 328   0.136  0.8916
 ## 
 ## postpartum_sample = 5:
 ##  contrast                    estimate   SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1    0.981 1.82 328   0.538  0.5912
+##  nas.IMI.cow1 - nas.IMI.cow0   -0.981 1.82 328  -0.538  0.5912
 ## 
 ## postpartum_sample = 6:
 ##  contrast                    estimate   SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1   -4.161 1.85 328  -2.245  0.0255
+##  nas.IMI.cow1 - nas.IMI.cow0    4.161 1.85 328   2.245  0.0255
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_2 &lt;- lme(fixed =milk_kg~ nas.IMI.cow*postpartum_sample+calving.sau+calving.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_2 &lt;- emmeans(model_2,pairwise~nas.IMI.cow|postpartum_sample)
+emmeans_2 &lt;- emmeans(model_2,revpairwise~nas.IMI.cow|postpartum_sample)
 
 emmeans_2</code></pre>
 <pre><code>## $emmeans
@@ -7524,27 +6278,27 @@ emmeans_2</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1   -0.987 0.779 326  -1.268  0.2056
+##  nas.IMI.cow1 - nas.IMI.cow0    0.987 0.779 326   1.268  0.2056
 ## 
 ## postpartum_sample = 2:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1    0.801 0.780 326   1.026  0.3055
+##  nas.IMI.cow1 - nas.IMI.cow0   -0.801 0.780 326  -1.026  0.3055
 ## 
 ## postpartum_sample = 3:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1    1.284 0.801 326   1.603  0.1099
+##  nas.IMI.cow1 - nas.IMI.cow0   -1.284 0.801 326  -1.603  0.1099
 ## 
 ## postpartum_sample = 4:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1    0.102 0.857 326   0.119  0.9053
+##  nas.IMI.cow1 - nas.IMI.cow0   -0.102 0.857 326  -0.119  0.9053
 ## 
 ## postpartum_sample = 5:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1    0.669 0.832 326   0.804  0.4217
+##  nas.IMI.cow1 - nas.IMI.cow0   -0.669 0.832 326  -0.804  0.4217
 ## 
 ## postpartum_sample = 6:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  nas.IMI.cow0 - nas.IMI.cow1   -1.663 0.845 326  -1.968  0.0499
+##  nas.IMI.cow1 - nas.IMI.cow0    1.663 0.845 326   1.968  0.0499
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -7586,28 +6340,28 @@ emmeans_2</code></pre>
 ## 
 ## $contrasts
 ## postpartum_sample = 1:
-##  contrast                    estimate    SE  df lower.CL  upper.CL
-##  nas.IMI.cow0 - nas.IMI.cow1   -0.987 0.779 326   -2.519  0.544077
+##  contrast                    estimate    SE  df  lower.CL upper.CL
+##  nas.IMI.cow1 - nas.IMI.cow0    0.987 0.779 326 -0.544077    2.519
 ## 
 ## postpartum_sample = 2:
-##  contrast                    estimate    SE  df lower.CL  upper.CL
-##  nas.IMI.cow0 - nas.IMI.cow1    0.801 0.780 326   -0.734  2.335868
+##  contrast                    estimate    SE  df  lower.CL upper.CL
+##  nas.IMI.cow1 - nas.IMI.cow0   -0.801 0.780 326 -2.335868    0.734
 ## 
 ## postpartum_sample = 3:
-##  contrast                    estimate    SE  df lower.CL  upper.CL
-##  nas.IMI.cow0 - nas.IMI.cow1    1.284 0.801 326   -0.292  2.859554
+##  contrast                    estimate    SE  df  lower.CL upper.CL
+##  nas.IMI.cow1 - nas.IMI.cow0   -1.284 0.801 326 -2.859554    0.292
 ## 
 ## postpartum_sample = 4:
-##  contrast                    estimate    SE  df lower.CL  upper.CL
-##  nas.IMI.cow0 - nas.IMI.cow1    0.102 0.857 326   -1.585  1.788968
+##  contrast                    estimate    SE  df  lower.CL upper.CL
+##  nas.IMI.cow1 - nas.IMI.cow0   -0.102 0.857 326 -1.788968    1.585
 ## 
 ## postpartum_sample = 5:
-##  contrast                    estimate    SE  df lower.CL  upper.CL
-##  nas.IMI.cow0 - nas.IMI.cow1    0.669 0.832 326   -0.967  2.305188
+##  contrast                    estimate    SE  df  lower.CL upper.CL
+##  nas.IMI.cow1 - nas.IMI.cow0   -0.669 0.832 326 -2.305188    0.967
 ## 
 ## postpartum_sample = 6:
-##  contrast                    estimate    SE  df lower.CL  upper.CL
-##  nas.IMI.cow0 - nas.IMI.cow1   -1.663 0.845 326   -3.326 -0.000863
+##  contrast                    estimate    SE  df  lower.CL upper.CL
+##  nas.IMI.cow1 - nas.IMI.cow0    1.663 0.845 326  0.000863    3.326
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment 
@@ -7676,7 +6430,7 @@ Confint(model_2_adj_overall)</code></pre>
 
 model_3 &lt;- lme(fixed =milk_kg~ sch.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
- emmeans(model_3,pairwise~sch.IMI.cow|postpartum_sample)</code></pre>
+ emmeans(model_3,revpairwise~sch.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  sch.IMI.cow emmean   SE df lower.CL upper.CL
@@ -7714,32 +6468,32 @@ model_3 &lt;- lme(fixed =milk_kg~ sch.IMI.cow*postpartum_sample,random=~1|Site/C
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1  -0.9706 0.804 328  -1.207  0.2281
+##  sch.IMI.cow1 - sch.IMI.cow0   0.9706 0.804 328   1.207  0.2281
 ## 
 ## postpartum_sample = 2:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1   0.1638 0.800 328   0.205  0.8379
+##  sch.IMI.cow1 - sch.IMI.cow0  -0.1638 0.800 328  -0.205  0.8379
 ## 
 ## postpartum_sample = 3:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1   1.6556 0.817 328   2.026  0.0436
+##  sch.IMI.cow1 - sch.IMI.cow0  -1.6556 0.817 328  -2.026  0.0436
 ## 
 ## postpartum_sample = 4:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1  -0.0422 0.867 328  -0.049  0.9612
+##  sch.IMI.cow1 - sch.IMI.cow0   0.0422 0.867 328   0.049  0.9612
 ## 
 ## postpartum_sample = 5:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1   1.2375 0.846 328   1.463  0.1444
+##  sch.IMI.cow1 - sch.IMI.cow0  -1.2375 0.846 328  -1.463  0.1444
 ## 
 ## postpartum_sample = 6:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1  -0.8884 0.863 328  -1.030  0.3038
+##  sch.IMI.cow1 - sch.IMI.cow0   0.8884 0.863 328   1.030  0.3038
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_3 &lt;- lme(fixed =milk_kg~ sch.IMI.cow*postpartum_sample+calving.sau+calving.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_3 &lt;- emmeans(model_3,pairwise~sch.IMI.cow|postpartum_sample)
+emmeans_3 &lt;- emmeans(model_3,revpairwise~sch.IMI.cow|postpartum_sample)
 
 emmeans_3</code></pre>
 <pre><code>## $emmeans
@@ -7780,27 +6534,27 @@ emmeans_3</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1   -0.802 0.804 326  -0.998  0.3191
+##  sch.IMI.cow1 - sch.IMI.cow0    0.802 0.804 326   0.998  0.3191
 ## 
 ## postpartum_sample = 2:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1    0.343 0.801 326   0.428  0.6689
+##  sch.IMI.cow1 - sch.IMI.cow0   -0.343 0.801 326  -0.428  0.6689
 ## 
 ## postpartum_sample = 3:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1    1.842 0.818 326   2.253  0.0249
+##  sch.IMI.cow1 - sch.IMI.cow0   -1.842 0.818 326  -2.253  0.0249
 ## 
 ## postpartum_sample = 4:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1    0.140 0.867 326   0.162  0.8715
+##  sch.IMI.cow1 - sch.IMI.cow0   -0.140 0.867 326  -0.162  0.8715
 ## 
 ## postpartum_sample = 5:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1    1.423 0.846 326   1.682  0.0936
+##  sch.IMI.cow1 - sch.IMI.cow0   -1.423 0.846 326  -1.682  0.0936
 ## 
 ## postpartum_sample = 6:
 ##  contrast                    estimate    SE  df t.ratio p.value
-##  sch.IMI.cow0 - sch.IMI.cow1   -0.697 0.863 326  -0.808  0.4199
+##  sch.IMI.cow1 - sch.IMI.cow0    0.697 0.863 326   0.808  0.4199
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -7843,27 +6597,27 @@ emmeans_3</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                    estimate    SE  df lower.CL upper.CL
-##  sch.IMI.cow0 - sch.IMI.cow1   -0.802 0.804 326   -2.383    0.779
+##  sch.IMI.cow1 - sch.IMI.cow0    0.802 0.804 326   -0.779    2.383
 ## 
 ## postpartum_sample = 2:
 ##  contrast                    estimate    SE  df lower.CL upper.CL
-##  sch.IMI.cow0 - sch.IMI.cow1    0.343 0.801 326   -1.233    1.918
+##  sch.IMI.cow1 - sch.IMI.cow0   -0.343 0.801 326   -1.918    1.233
 ## 
 ## postpartum_sample = 3:
 ##  contrast                    estimate    SE  df lower.CL upper.CL
-##  sch.IMI.cow0 - sch.IMI.cow1    1.842 0.818 326    0.234    3.450
+##  sch.IMI.cow1 - sch.IMI.cow0   -1.842 0.818 326   -3.450   -0.234
 ## 
 ## postpartum_sample = 4:
 ##  contrast                    estimate    SE  df lower.CL upper.CL
-##  sch.IMI.cow0 - sch.IMI.cow1    0.140 0.867 326   -1.566    1.847
+##  sch.IMI.cow1 - sch.IMI.cow0   -0.140 0.867 326   -1.847    1.566
 ## 
 ## postpartum_sample = 5:
 ##  contrast                    estimate    SE  df lower.CL upper.CL
-##  sch.IMI.cow0 - sch.IMI.cow1    1.423 0.846 326   -0.242    3.089
+##  sch.IMI.cow1 - sch.IMI.cow0   -1.423 0.846 326   -3.089    0.242
 ## 
 ## postpartum_sample = 6:
 ##  contrast                    estimate    SE  df lower.CL upper.CL
-##  sch.IMI.cow0 - sch.IMI.cow1   -0.697 0.863 326   -2.396    1.001
+##  sch.IMI.cow1 - sch.IMI.cow0    0.697 0.863 326   -1.001    2.396
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment 
@@ -7930,7 +6684,7 @@ Confint(model_3_adj_overall)</code></pre>
 
 model_4 &lt;- lme(fixed =milk_kg~ nas.non.chrom.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_4,pairwise~nas.non.chrom.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_4,revpairwise~nas.non.chrom.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  nas.non.chrom.IMI.cow emmean   SE df lower.CL upper.CL
@@ -7968,44 +6722,44 @@ emmeans(model_4,pairwise~nas.non.chrom.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1   -1.117 0.962 328  -1.161
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0    1.117 0.962 328   1.161
 ##  p.value
 ##   0.2465
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1    0.252 0.939 328   0.268
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   -0.252 0.939 328  -0.268
 ##  p.value
 ##   0.7890
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1   -0.113 0.956 328  -0.118
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0    0.113 0.956 328   0.118
 ##  p.value
 ##   0.9060
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1   -0.555 0.991 328  -0.560
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0    0.555 0.991 328   0.560
 ##  p.value
 ##   0.5759
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1   -1.494 0.981 328  -1.523
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0    1.494 0.981 328   1.523
 ##  p.value
 ##   0.1288
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1   -2.170 1.007 328  -2.155
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0    2.170 1.007 328   2.155
 ##  p.value
 ##   0.0319
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_4 &lt;- lme(fixed =milk_kg~ nas.non.chrom.IMI.cow*postpartum_sample+calving.sau+calving.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_4 &lt;- emmeans(model_4,pairwise~nas.non.chrom.IMI.cow|postpartum_sample)
+emmeans_4 &lt;- emmeans(model_4,revpairwise~nas.non.chrom.IMI.cow|postpartum_sample)
 
 emmeans_4</code></pre>
 <pre><code>## $emmeans
@@ -8046,37 +6800,37 @@ emmeans_4</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -1.0435 0.964 326  -1.082
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   1.0435 0.964 326   1.082
 ##  p.value
 ##   0.2800
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1   0.3287 0.942 326   0.349
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0  -0.3287 0.942 326  -0.349
 ##  p.value
 ##   0.7273
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -0.0358 0.959 326  -0.037
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   0.0358 0.959 326   0.037
 ##  p.value
 ##   0.9702
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -0.4758 0.994 326  -0.479
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   0.4758 0.994 326   0.479
 ##  p.value
 ##   0.6325
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -1.4090 0.984 326  -1.432
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   1.4090 0.984 326   1.432
 ##  p.value
 ##   0.1531
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                        estimate    SE  df t.ratio
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -2.0768 1.009 326  -2.057
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   2.0768 1.009 326   2.057
 ##  p.value
 ##   0.0404
 ## 
@@ -8121,39 +6875,39 @@ emmeans_4</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                        estimate    SE  df lower.CL
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -1.0435 0.964 326    -2.94
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   1.0435 0.964 326   -0.853
 ##  upper.CL
-##     0.853
+##      2.94
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                        estimate    SE  df lower.CL
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1   0.3287 0.942 326    -1.52
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0  -0.3287 0.942 326   -2.181
 ##  upper.CL
-##     2.181
+##      1.52
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                        estimate    SE  df lower.CL
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -0.0358 0.959 326    -1.92
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   0.0358 0.959 326   -1.850
 ##  upper.CL
-##     1.850
+##      1.92
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                        estimate    SE  df lower.CL
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -0.4758 0.994 326    -2.43
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   0.4758 0.994 326   -1.480
 ##  upper.CL
-##     1.480
+##      2.43
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                        estimate    SE  df lower.CL
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -1.4090 0.984 326    -3.34
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   1.4090 0.984 326   -0.526
 ##  upper.CL
-##     0.526
+##      3.34
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                        estimate    SE  df lower.CL
-##  nas.non.chrom.IMI.cow0 - nas.non.chrom.IMI.cow1  -2.0768 1.009 326    -4.06
+##  nas.non.chrom.IMI.cow1 - nas.non.chrom.IMI.cow0   2.0768 1.009 326    0.091
 ##  upper.CL
-##    -0.091
+##      4.06
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment 
@@ -8225,7 +6979,7 @@ Confint(model_4_adj_overall)</code></pre>
 
 model_5 &lt;- lme(fixed =milk_kg~ staph.spp.IMI.cow*postpartum_sample+calving.sau+calving.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_5,pairwise~staph.spp.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_5,revpairwise~staph.spp.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  staph.spp.IMI.cow emmean   SE df lower.CL upper.CL
@@ -8264,33 +7018,33 @@ emmeans(model_5,pairwise~staph.spp.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -0.6702 1.009 326  -0.664  0.5069
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   0.6702 1.009 326   0.664  0.5069
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1   0.4556 0.981 326   0.464  0.6426
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0  -0.4556 0.981 326  -0.464  0.6426
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1   0.0866 1.000 326   0.087  0.9310
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0  -0.0866 1.000 326  -0.087  0.9310
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -0.6061 1.038 326  -0.584  0.5595
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   0.6061 1.038 326   0.584  0.5595
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -1.4437 1.028 326  -1.405  0.1610
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   1.4437 1.028 326   1.405  0.1610
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -2.4508 1.053 326  -2.328  0.0205
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   2.4508 1.053 326   2.328  0.0205
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_5 &lt;- lme(fixed =milk_kg~ staph.spp.IMI.cow*postpartum_sample+calving.sau+calving.sslo,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_5 &lt;- emmeans(model_5,pairwise~staph.spp.IMI.cow|postpartum_sample)
+emmeans_5 &lt;- emmeans(model_5,revpairwise~staph.spp.IMI.cow|postpartum_sample)
 
 emmeans_5</code></pre>
 <pre><code>## $emmeans
@@ -8331,27 +7085,27 @@ emmeans_5</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -0.6702 1.009 326  -0.664  0.5069
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   0.6702 1.009 326   0.664  0.5069
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1   0.4556 0.981 326   0.464  0.6426
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0  -0.4556 0.981 326  -0.464  0.6426
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1   0.0866 1.000 326   0.087  0.9310
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0  -0.0866 1.000 326  -0.087  0.9310
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -0.6061 1.038 326  -0.584  0.5595
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   0.6061 1.038 326   0.584  0.5595
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -1.4437 1.028 326  -1.405  0.1610
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   1.4437 1.028 326   1.405  0.1610
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                estimate    SE  df t.ratio p.value
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -2.4508 1.053 326  -2.328  0.0205
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   2.4508 1.053 326   2.328  0.0205
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -8394,27 +7148,27 @@ emmeans_5</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                estimate    SE  df lower.CL upper.CL
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -0.6702 1.009 326    -2.65    1.314
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   0.6702 1.009 326   -1.314     2.65
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                estimate    SE  df lower.CL upper.CL
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1   0.4556 0.981 326    -1.47    2.385
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0  -0.4556 0.981 326   -2.385     1.47
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                estimate    SE  df lower.CL upper.CL
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1   0.0866 1.000 326    -1.88    2.053
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0  -0.0866 1.000 326   -2.053     1.88
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                estimate    SE  df lower.CL upper.CL
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -0.6061 1.038 326    -2.65    1.435
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   0.6061 1.038 326   -1.435     2.65
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                estimate    SE  df lower.CL upper.CL
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -1.4437 1.028 326    -3.47    0.578
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   1.4437 1.028 326   -0.578     3.47
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                estimate    SE  df lower.CL upper.CL
-##  staph.spp.IMI.cow0 - staph.spp.IMI.cow1  -2.4508 1.053 326    -4.52   -0.380
+##  staph.spp.IMI.cow1 - staph.spp.IMI.cow0   2.4508 1.053 326    0.380     4.52
 ## 
 ## Results are averaged over the levels of: calving.sau, calving.sslo 
 ## Degrees-of-freedom method: containment 
@@ -8484,7 +7238,7 @@ Confint(model_5_adj_overall)</code></pre>
 
 model_6 &lt;- lme(fixed =milk_kg~ strep.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_6,pairwise~strep.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_6,revpairwise~strep.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  strep.IMI.cow emmean   SE df lower.CL upper.CL
@@ -8522,32 +7276,32 @@ emmeans(model_6,pairwise~strep.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    1.209 0.810 328   1.493  0.1365
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.209 0.810 328  -1.493  0.1365
 ## 
 ## postpartum_sample = 2:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    2.249 0.815 328   2.759  0.0061
+##  strep.IMI.cow1 - strep.IMI.cow0   -2.249 0.815 328  -2.759  0.0061
 ## 
 ## postpartum_sample = 3:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    1.245 0.840 328   1.483  0.1391
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.245 0.840 328  -1.483  0.1391
 ## 
 ## postpartum_sample = 4:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    1.234 0.884 328   1.396  0.1637
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.234 0.884 328  -1.396  0.1637
 ## 
 ## postpartum_sample = 5:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    0.386 0.869 328   0.445  0.6569
+##  strep.IMI.cow1 - strep.IMI.cow0   -0.386 0.869 328  -0.445  0.6569
 ## 
 ## postpartum_sample = 6:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    0.649 0.886 328   0.732  0.4646
+##  strep.IMI.cow1 - strep.IMI.cow0   -0.649 0.886 328  -0.732  0.4646
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_6 &lt;- lme(fixed =milk_kg~ strep.IMI.cow*postpartum_sample+calving.nas+calving.sau,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_6 &lt;- emmeans(model_6,pairwise~strep.IMI.cow|postpartum_sample)
+emmeans_6 &lt;- emmeans(model_6,revpairwise~strep.IMI.cow|postpartum_sample)
 
 emmeans_6</code></pre>
 <pre><code>## $emmeans
@@ -8588,27 +7342,27 @@ emmeans_6</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    1.291 0.817 326   1.580  0.1151
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.291 0.817 326  -1.580  0.1151
 ## 
 ## postpartum_sample = 2:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    2.332 0.823 326   2.835  0.0049
+##  strep.IMI.cow1 - strep.IMI.cow0   -2.332 0.823 326  -2.835  0.0049
 ## 
 ## postpartum_sample = 3:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    1.326 0.847 326   1.565  0.1185
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.326 0.847 326  -1.565  0.1185
 ## 
 ## postpartum_sample = 4:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    1.316 0.892 326   1.476  0.1410
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.316 0.892 326  -1.476  0.1410
 ## 
 ## postpartum_sample = 5:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    0.467 0.876 326   0.533  0.5944
+##  strep.IMI.cow1 - strep.IMI.cow0   -0.467 0.876 326  -0.533  0.5944
 ## 
 ## postpartum_sample = 6:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  strep.IMI.cow0 - strep.IMI.cow1    0.730 0.893 326   0.817  0.4145
+##  strep.IMI.cow1 - strep.IMI.cow0   -0.730 0.893 326  -0.817  0.4145
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -8651,27 +7405,27 @@ emmeans_6</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  strep.IMI.cow0 - strep.IMI.cow1    1.291 0.817 326   -0.317     2.90
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.291 0.817 326    -2.90    0.317
 ## 
 ## postpartum_sample = 2:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  strep.IMI.cow0 - strep.IMI.cow1    2.332 0.823 326    0.714     3.95
+##  strep.IMI.cow1 - strep.IMI.cow0   -2.332 0.823 326    -3.95   -0.714
 ## 
 ## postpartum_sample = 3:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  strep.IMI.cow0 - strep.IMI.cow1    1.326 0.847 326   -0.341     2.99
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.326 0.847 326    -2.99    0.341
 ## 
 ## postpartum_sample = 4:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  strep.IMI.cow0 - strep.IMI.cow1    1.316 0.892 326   -0.438     3.07
+##  strep.IMI.cow1 - strep.IMI.cow0   -1.316 0.892 326    -3.07    0.438
 ## 
 ## postpartum_sample = 5:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  strep.IMI.cow0 - strep.IMI.cow1    0.467 0.876 326   -1.257     2.19
+##  strep.IMI.cow1 - strep.IMI.cow0   -0.467 0.876 326    -2.19    1.257
 ## 
 ## postpartum_sample = 6:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  strep.IMI.cow0 - strep.IMI.cow1    0.730 0.893 326   -1.027     2.49
+##  strep.IMI.cow1 - strep.IMI.cow0   -0.730 0.893 326    -2.49    1.027
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
@@ -8740,7 +7494,7 @@ Confint(model_6_adj_overall)</code></pre>
 
 model_7 &lt;- lme(fixed =milk_kg~ strep.genus.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_7,pairwise~strep.genus.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_7,revpairwise~strep.genus.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  strep.genus.IMI.cow emmean   SE df lower.CL upper.CL
@@ -8778,32 +7532,32 @@ emmeans(model_7,pairwise~strep.genus.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    0.997 0.979 328   1.019  0.3092
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -0.997 0.979 328  -1.019  0.3092
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    2.514 0.980 328   2.564  0.0108
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -2.514 0.980 328  -2.564  0.0108
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.342 1.006 328   1.334  0.1832
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.342 1.006 328  -1.334  0.1832
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.366 1.046 328   1.306  0.1925
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.366 1.046 328  -1.306  0.1925
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1   -0.422 1.035 328  -0.408  0.6838
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0    0.422 1.035 328   0.408  0.6838
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    0.386 1.044 328   0.370  0.7119
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -0.386 1.044 328  -0.370  0.7119
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_7 &lt;- lme(fixed =milk_kg~ strep.genus.IMI.cow*postpartum_sample+calving.nas+calving.sau,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_7 &lt;- emmeans(model_7,pairwise~strep.genus.IMI.cow|postpartum_sample)
+emmeans_7 &lt;- emmeans(model_7,revpairwise~strep.genus.IMI.cow|postpartum_sample)
 
 emmeans_7</code></pre>
 <pre><code>## $emmeans
@@ -8844,27 +7598,27 @@ emmeans_7</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.063 0.988 326   1.076  0.2829
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.063 0.988 326  -1.076  0.2829
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    2.580 0.989 326   2.608  0.0095
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -2.580 0.989 326  -2.608  0.0095
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.407 1.015 326   1.386  0.1666
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.407 1.015 326  -1.386  0.1666
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.432 1.055 326   1.357  0.1757
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.432 1.055 326  -1.357  0.1757
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1   -0.357 1.044 326  -0.342  0.7329
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0    0.357 1.044 326   0.342  0.7329
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                    estimate    SE  df t.ratio p.value
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    0.451 1.053 326   0.428  0.6686
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -0.451 1.053 326  -0.428  0.6686
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -8907,39 +7661,39 @@ emmeans_7</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                    estimate    SE  df lower.CL
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.063 0.988 326   -0.881
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.063 0.988 326    -3.01
 ##  upper.CL
-##      3.01
+##     0.881
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                    estimate    SE  df lower.CL
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    2.580 0.989 326    0.634
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -2.580 0.989 326    -4.53
 ##  upper.CL
-##      4.53
+##    -0.634
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                    estimate    SE  df lower.CL
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.407 1.015 326   -0.590
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.407 1.015 326    -3.40
 ##  upper.CL
-##      3.40
+##     0.590
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                    estimate    SE  df lower.CL
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    1.432 1.055 326   -0.643
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -1.432 1.055 326    -3.51
 ##  upper.CL
-##      3.51
+##     0.643
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                    estimate    SE  df lower.CL
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1   -0.357 1.044 326   -2.411
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0    0.357 1.044 326    -1.70
 ##  upper.CL
-##      1.70
+##     2.411
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                    estimate    SE  df lower.CL
-##  strep.genus.IMI.cow0 - strep.genus.IMI.cow1    0.451 1.053 326   -1.620
+##  strep.genus.IMI.cow1 - strep.genus.IMI.cow0   -0.451 1.053 326    -2.52
 ##  upper.CL
-##      2.52
+##     1.620
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
@@ -9009,7 +7763,7 @@ Confint(model_7_adj_overall)</code></pre>
 
 model_8 &lt;- lme(fixed =milk_kg ~ strep.dys.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_8,pairwise~strep.dys.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_8,revpairwise~strep.dys.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  strep.dys.IMI.cow emmean   SE df lower.CL upper.CL
@@ -9047,32 +7801,32 @@ emmeans(model_8,pairwise~strep.dys.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1    2.633 1.16 328   2.264  0.0243
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   -2.633 1.16 328  -2.264  0.0243
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1    3.528 1.15 328   3.054  0.0024
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   -3.528 1.15 328  -3.054  0.0024
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1    1.584 1.18 328   1.344  0.1799
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   -1.584 1.18 328  -1.344  0.1799
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1    0.427 1.23 328   0.347  0.7286
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   -0.427 1.23 328  -0.347  0.7286
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   -0.184 1.22 328  -0.151  0.8800
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0    0.184 1.22 328   0.151  0.8800
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   -0.153 1.22 328  -0.126  0.8999
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0    0.153 1.22 328   0.126  0.8999
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_8 &lt;- lme(fixed =milk_kg ~ strep.dys.IMI.cow*postpartum_sample+calving.nas+calving.sau,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_8 &lt;- emmeans(model_8,pairwise~strep.dys.IMI.cow|postpartum_sample)
+emmeans_8 &lt;- emmeans(model_8,revpairwise~strep.dys.IMI.cow|postpartum_sample)
 
 emmeans_8</code></pre>
 <pre><code>## $emmeans
@@ -9113,27 +7867,27 @@ emmeans_8</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   2.7034 1.17 326   2.312  0.0214
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -2.7034 1.17 326  -2.312  0.0214
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   3.6005 1.16 326   3.100  0.0021
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -3.6005 1.16 326  -3.100  0.0021
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   1.6539 1.19 326   1.395  0.1639
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -1.6539 1.19 326  -1.395  0.1639
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   0.4964 1.24 326   0.402  0.6881
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -0.4964 1.24 326  -0.402  0.6881
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1  -0.1146 1.22 326  -0.094  0.9253
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   0.1146 1.22 326   0.094  0.9253
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                estimate   SE  df t.ratio p.value
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1  -0.0871 1.23 326  -0.071  0.9434
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   0.0871 1.23 326   0.071  0.9434
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -9176,27 +7930,27 @@ emmeans_8</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                estimate   SE  df lower.CL upper.CL
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   2.7034 1.17 326    0.403     5.00
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -2.7034 1.17 326    -5.00   -0.403
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                estimate   SE  df lower.CL upper.CL
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   3.6005 1.16 326    1.315     5.89
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -3.6005 1.16 326    -5.89   -1.315
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                estimate   SE  df lower.CL upper.CL
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   1.6539 1.19 326   -0.678     3.99
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -1.6539 1.19 326    -3.99    0.678
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                estimate   SE  df lower.CL upper.CL
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1   0.4964 1.24 326   -1.934     2.93
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0  -0.4964 1.24 326    -2.93    1.934
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                estimate   SE  df lower.CL upper.CL
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1  -0.1146 1.22 326   -2.518     2.29
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   0.1146 1.22 326    -2.29    2.518
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                estimate   SE  df lower.CL upper.CL
-##  strep.dys.IMI.cow0 - strep.dys.IMI.cow1  -0.0871 1.23 326   -2.497     2.32
+##  strep.dys.IMI.cow1 - strep.dys.IMI.cow0   0.0871 1.23 326    -2.32    2.497
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
@@ -9263,7 +8017,7 @@ Confint(model_8_adj_overall)</code></pre>
 
 model_9 &lt;- lme(fixed =milk_kg ~ strep.sp.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_9,pairwise~strep.sp.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_9,revpairwise~strep.sp.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  strep.sp.IMI.cow emmean   SE df lower.CL upper.CL
@@ -9301,32 +8055,32 @@ emmeans(model_9,pairwise~strep.sp.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    0.635 1.32 328   0.482  0.6304
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -0.635 1.32 328  -0.482  0.6304
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    2.615 1.30 328   2.004  0.0458
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -2.615 1.30 328  -2.004  0.0458
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    1.346 1.34 328   1.003  0.3167
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -1.346 1.34 328  -1.003  0.3167
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    2.804 1.37 328   2.047  0.0415
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -2.804 1.37 328  -2.047  0.0415
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1   -0.291 1.40 328  -0.208  0.8357
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0    0.291 1.40 328   0.208  0.8357
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    0.323 1.41 328   0.229  0.8187
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -0.323 1.41 328  -0.229  0.8187
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_9 &lt;- lme(fixed =milk_kg ~ strep.sp.IMI.cow*postpartum_sample+calving.nas+calving.sau,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_9 &lt;- emmeans(model_9,pairwise~strep.sp.IMI.cow|postpartum_sample)
+emmeans_9 &lt;- emmeans(model_9,revpairwise~strep.sp.IMI.cow|postpartum_sample)
 
 emmeans_9</code></pre>
 <pre><code>## $emmeans
@@ -9367,27 +8121,27 @@ emmeans_9</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    0.651 1.32 326   0.493  0.6223
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -0.651 1.32 326  -0.493  0.6223
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    2.630 1.31 326   2.012  0.0450
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -2.630 1.31 326  -2.012  0.0450
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    1.362 1.34 326   1.013  0.3118
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -1.362 1.34 326  -1.013  0.3118
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    2.820 1.37 326   2.055  0.0407
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -2.820 1.37 326  -2.055  0.0407
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1   -0.279 1.40 326  -0.199  0.8428
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0    0.279 1.40 326   0.199  0.8428
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    0.338 1.41 326   0.240  0.8108
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -0.338 1.41 326  -0.240  0.8108
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -9430,27 +8184,27 @@ emmeans_9</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    0.651 1.32 326  -1.9469     3.25
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -0.651 1.32 326    -3.25   1.9469
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    2.630 1.31 326   0.0589     5.20
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -2.630 1.31 326    -5.20  -0.0589
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    1.362 1.34 326  -1.2831     4.01
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -1.362 1.34 326    -4.01   1.2831
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    2.820 1.37 326   0.1203     5.52
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -2.820 1.37 326    -5.52  -0.1203
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1   -0.279 1.40 326  -3.0422     2.48
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0    0.279 1.40 326    -2.48   3.0422
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  strep.sp.IMI.cow0 - strep.sp.IMI.cow1    0.338 1.41 326  -2.4354     3.11
+##  strep.sp.IMI.cow1 - strep.sp.IMI.cow0   -0.338 1.41 326    -3.11   2.4354
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
@@ -9521,7 +8275,7 @@ Confint(model_9_adj_overall)</code></pre>
 
 model_10 &lt;- lme(fixed =milk_kg~ strep.like.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_10,pairwise~strep.like.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_10,revpairwise~strep.like.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  strep.like.IMI.cow emmean   SE df lower.CL upper.CL
@@ -9559,32 +8313,32 @@ emmeans(model_10,pairwise~strep.like.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1  0.30083 1.01 328   0.298  0.7660
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0 -0.30083 1.01 328  -0.298  0.7660
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1  0.19489 1.04 328   0.188  0.8511
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0 -0.19489 1.04 328  -0.188  0.8511
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1 -0.09261 1.09 328  -0.085  0.9326
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  0.09261 1.09 328   0.085  0.9326
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1 -0.00183 1.15 328  -0.002  0.9987
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  0.00183 1.15 328   0.002  0.9987
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1  0.86566 1.14 328   0.760  0.4478
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0 -0.86566 1.14 328  -0.760  0.4478
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1  0.27872 1.18 328   0.236  0.8132
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0 -0.27872 1.18 328  -0.236  0.8132
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_10 &lt;- lme(fixed =milk_kg~ strep.like.IMI.cow*postpartum_sample+calving.nas+calving.sau,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_10 &lt;- emmeans(model_10,pairwise~strep.like.IMI.cow|postpartum_sample)
+emmeans_10 &lt;- emmeans(model_10,revpairwise~strep.like.IMI.cow|postpartum_sample)
 
 emmeans_10</code></pre>
 <pre><code>## $emmeans
@@ -9625,27 +8379,27 @@ emmeans_10</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.3425 1.02 326   0.337  0.7361
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.3425 1.02 326  -0.337  0.7361
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.2373 1.04 326   0.228  0.8201
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.2373 1.04 326  -0.228  0.8201
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1  -0.0529 1.10 326  -0.048  0.9616
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0   0.0529 1.10 326   0.048  0.9616
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.0376 1.15 326   0.033  0.9740
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.0376 1.15 326  -0.033  0.9740
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.9048 1.14 326   0.791  0.4293
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.9048 1.14 326  -0.791  0.4293
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                  estimate   SE  df t.ratio p.value
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.3184 1.18 326   0.269  0.7880
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.3184 1.18 326  -0.269  0.7880
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -9688,27 +8442,27 @@ emmeans_10</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                  estimate   SE  df lower.CL upper.CL
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.3425 1.02 326    -1.65     2.34
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.3425 1.02 326    -2.34     1.65
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                  estimate   SE  df lower.CL upper.CL
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.2373 1.04 326    -1.81     2.29
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.2373 1.04 326    -2.29     1.81
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                  estimate   SE  df lower.CL upper.CL
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1  -0.0529 1.10 326    -2.21     2.11
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0   0.0529 1.10 326    -2.11     2.21
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                  estimate   SE  df lower.CL upper.CL
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.0376 1.15 326    -2.23     2.31
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.0376 1.15 326    -2.31     2.23
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                  estimate   SE  df lower.CL upper.CL
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.9048 1.14 326    -1.34     3.15
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.9048 1.14 326    -3.15     1.34
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                  estimate   SE  df lower.CL upper.CL
-##  strep.like.IMI.cow0 - strep.like.IMI.cow1   0.3184 1.18 326    -2.01     2.65
+##  strep.like.IMI.cow1 - strep.like.IMI.cow0  -0.3184 1.18 326    -2.65     2.01
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau 
 ## Degrees-of-freedom method: containment 
@@ -9778,7 +8532,7 @@ Confint(model_10_adj_overall)</code></pre>
 
 model_11 &lt;- lme(fixed =milk_kg~ enterococcus.spp.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_11,pairwise~enterococcus.spp.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_11,revpairwise~enterococcus.spp.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  enterococcus.spp.IMI.cow emmean   SE df lower.CL upper.CL
@@ -9816,44 +8570,44 @@ emmeans(model_11,pairwise~enterococcus.spp.IMI.cow|postpartum_sample)</code></pr
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1    1.374 1.22 328
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -1.374 1.22 328
 ##  t.ratio p.value
-##    1.125  0.2615
+##   -1.125  0.2615
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1    0.279 1.25 328
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -0.279 1.25 328
 ##  t.ratio p.value
-##    0.223  0.8240
+##   -0.223  0.8240
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   -0.234 1.33 328
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0    0.234 1.33 328
 ##  t.ratio p.value
-##   -0.175  0.8611
+##    0.175  0.8611
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   -0.240 1.36 328
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0    0.240 1.36 328
 ##  t.ratio p.value
-##   -0.176  0.8600
+##    0.176  0.8600
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1    1.042 1.38 328
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -1.042 1.38 328
 ##  t.ratio p.value
-##    0.757  0.4495
+##   -0.757  0.4495
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1    0.456 1.41 328
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   -0.456 1.41 328
 ##  t.ratio p.value
-##    0.323  0.7472
+##   -0.323  0.7472
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_11 &lt;- lme(fixed =milk_kg~ enterococcus.spp.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_11 &lt;- emmeans(model_11,pairwise~enterococcus.spp.IMI.cow|postpartum_sample)
+emmeans_11 &lt;- emmeans(model_11,revpairwise~enterococcus.spp.IMI.cow|postpartum_sample)
 
 emmeans_11</code></pre>
 <pre><code>## $emmeans
@@ -9894,39 +8648,39 @@ emmeans_11</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   1.0008 1.23 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -1.0008 1.23 326
 ##  t.ratio p.value
-##    0.815  0.4154
+##   -0.815  0.4154
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1  -0.0806 1.26 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.0806 1.26 326
 ##  t.ratio p.value
-##   -0.064  0.9490
+##    0.064  0.9490
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1  -0.6238 1.34 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6238 1.34 326
 ##  t.ratio p.value
-##   -0.466  0.6415
+##    0.466  0.6415
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1  -0.6551 1.37 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6551 1.37 326
 ##  t.ratio p.value
-##   -0.479  0.6324
+##    0.479  0.6324
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   0.6129 1.38 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.6129 1.38 326
 ##  t.ratio p.value
-##    0.443  0.6577
+##   -0.443  0.6577
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   0.0298 1.42 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.0298 1.42 326
 ##  t.ratio p.value
-##    0.021  0.9833
+##   -0.021  0.9833
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -9969,39 +8723,39 @@ emmeans_11</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   1.0008 1.23 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -1.0008 1.23 326
 ##  lower.CL upper.CL
-##     -1.41     3.42
+##     -3.42     1.41
 ## 
 ## postpartum_sample = 2:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1  -0.0806 1.26 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.0806 1.26 326
 ##  lower.CL upper.CL
-##     -2.56     2.40
+##     -2.40     2.56
 ## 
 ## postpartum_sample = 3:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1  -0.6238 1.34 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6238 1.34 326
 ##  lower.CL upper.CL
-##     -3.26     2.01
+##     -2.01     3.26
 ## 
 ## postpartum_sample = 4:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1  -0.6551 1.37 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0   0.6551 1.37 326
 ##  lower.CL upper.CL
-##     -3.35     2.04
+##     -2.04     3.35
 ## 
 ## postpartum_sample = 5:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   0.6129 1.38 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.6129 1.38 326
 ##  lower.CL upper.CL
-##     -2.11     3.33
+##     -3.33     2.11
 ## 
 ## postpartum_sample = 6:
 ##  contrast                                              estimate   SE  df
-##  enterococcus.spp.IMI.cow0 - enterococcus.spp.IMI.cow1   0.0298 1.42 326
+##  enterococcus.spp.IMI.cow1 - enterococcus.spp.IMI.cow0  -0.0298 1.42 326
 ##  lower.CL upper.CL
-##     -2.76     2.82
+##     -2.82     2.76
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment 
@@ -10072,7 +8826,7 @@ Confint(model_11_adj_overall)</code></pre>
 
 model_12 &lt;- lme(fixed =milk_kg~ gram.neg.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_12,pairwise~gram.neg.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_12,revpairwise~gram.neg.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  gram.neg.IMI.cow emmean   SE df lower.CL upper.CL
@@ -10110,32 +8864,32 @@ emmeans(model_12,pairwise~gram.neg.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    1.683 1.32 328   1.270  0.2049
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -1.683 1.32 328  -1.270  0.2049
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    0.241 1.33 328   0.181  0.8562
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -0.241 1.33 328  -0.181  0.8562
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -0.510 1.36 328  -0.374  0.7085
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    0.510 1.36 328   0.374  0.7085
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    0.123 1.39 328   0.089  0.9294
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -0.123 1.39 328  -0.089  0.9294
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -0.639 1.42 328  -0.449  0.6541
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    0.639 1.42 328   0.449  0.6541
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -1.638 1.49 328  -1.100  0.2722
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    1.638 1.49 328   1.100  0.2722
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_12 &lt;- lme(fixed =milk_kg~ gram.neg.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_12 &lt;- emmeans(model_12,pairwise~gram.neg.IMI.cow|postpartum_sample)
+emmeans_12 &lt;- emmeans(model_12,revpairwise~gram.neg.IMI.cow|postpartum_sample)
 
 emmeans_12</code></pre>
 <pre><code>## $emmeans
@@ -10176,27 +8930,27 @@ emmeans_12</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    1.689 1.32 326   1.280  0.2013
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -1.689 1.32 326  -1.280  0.2013
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    0.231 1.32 326   0.175  0.8610
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -0.231 1.32 326  -0.175  0.8610
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -0.500 1.36 326  -0.368  0.7128
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    0.500 1.36 326   0.368  0.7128
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    0.151 1.39 326   0.109  0.9132
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -0.151 1.39 326  -0.109  0.9132
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -0.611 1.42 326  -0.431  0.6670
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    0.611 1.42 326   0.431  0.6670
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate   SE  df t.ratio p.value
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -1.632 1.48 326  -1.099  0.2724
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    1.632 1.48 326   1.099  0.2724
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -10239,27 +8993,27 @@ emmeans_12</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    1.689 1.32 326   -0.906     4.29
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -1.689 1.32 326    -4.29    0.906
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    0.231 1.32 326   -2.367     2.83
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -0.231 1.32 326    -2.83    2.367
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -0.500 1.36 326   -3.169     2.17
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    0.500 1.36 326    -2.17    3.169
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1    0.151 1.39 326   -2.574     2.88
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0   -0.151 1.39 326    -2.88    2.574
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -0.611 1.42 326   -3.402     2.18
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    0.611 1.42 326    -2.18    3.402
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate   SE  df lower.CL upper.CL
-##  gram.neg.IMI.cow0 - gram.neg.IMI.cow1   -1.632 1.48 326   -4.552     1.29
+##  gram.neg.IMI.cow1 - gram.neg.IMI.cow0    1.632 1.48 326    -1.29    4.552
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment 
@@ -10325,7 +9079,7 @@ Confint(model_12_adj_overall)</code></pre>
 
 model_13 &lt;- lme(fixed =milk_kg~ other.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_13,pairwise~other.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_13,revpairwise~other.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  other.IMI.cow emmean   SE df lower.CL upper.CL
@@ -10363,32 +9117,32 @@ emmeans(model_13,pairwise~other.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1    0.500 0.851 328   0.587  0.5574
+##  other.IMI.cow1 - other.IMI.cow0   -0.500 0.851 328  -0.587  0.5574
 ## 
 ## postpartum_sample = 2:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -0.943 0.853 328  -1.106  0.2695
+##  other.IMI.cow1 - other.IMI.cow0    0.943 0.853 328   1.106  0.2695
 ## 
 ## postpartum_sample = 3:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.355 0.876 328  -1.547  0.1228
+##  other.IMI.cow1 - other.IMI.cow0    1.355 0.876 328   1.547  0.1228
 ## 
 ## postpartum_sample = 4:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.941 0.915 328  -2.121  0.0347
+##  other.IMI.cow1 - other.IMI.cow0    1.941 0.915 328   2.121  0.0347
 ## 
 ## postpartum_sample = 5:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.846 0.903 328  -2.044  0.0418
+##  other.IMI.cow1 - other.IMI.cow0    1.846 0.903 328   2.044  0.0418
 ## 
 ## postpartum_sample = 6:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.234 0.917 328  -1.346  0.1792
+##  other.IMI.cow1 - other.IMI.cow0    1.234 0.917 328   1.346  0.1792
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_13 &lt;- lme(fixed =milk_kg~ other.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_13 &lt;- emmeans(model_13,pairwise~other.IMI.cow|postpartum_sample)
+emmeans_13 &lt;- emmeans(model_13,revpairwise~other.IMI.cow|postpartum_sample)
 
 emmeans_13</code></pre>
 <pre><code>## $emmeans
@@ -10429,27 +9183,27 @@ emmeans_13</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1    0.648 0.856 326   0.757  0.4493
+##  other.IMI.cow1 - other.IMI.cow0   -0.648 0.856 326  -0.757  0.4493
 ## 
 ## postpartum_sample = 2:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -0.806 0.857 326  -0.940  0.3480
+##  other.IMI.cow1 - other.IMI.cow0    0.806 0.857 326   0.940  0.3480
 ## 
 ## postpartum_sample = 3:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.238 0.881 326  -1.404  0.1612
+##  other.IMI.cow1 - other.IMI.cow0    1.238 0.881 326   1.404  0.1612
 ## 
 ## postpartum_sample = 4:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.822 0.920 326  -1.979  0.0486
+##  other.IMI.cow1 - other.IMI.cow0    1.822 0.920 326   1.979  0.0486
 ## 
 ## postpartum_sample = 5:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.718 0.909 326  -1.890  0.0596
+##  other.IMI.cow1 - other.IMI.cow0    1.718 0.909 326   1.890  0.0596
 ## 
 ## postpartum_sample = 6:
 ##  contrast                        estimate    SE  df t.ratio p.value
-##  other.IMI.cow0 - other.IMI.cow1   -1.117 0.922 326  -1.212  0.2263
+##  other.IMI.cow1 - other.IMI.cow0    1.117 0.922 326   1.212  0.2263
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -10492,27 +9246,27 @@ emmeans_13</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  other.IMI.cow0 - other.IMI.cow1    0.648 0.856 326    -1.04   2.3325
+##  other.IMI.cow1 - other.IMI.cow0   -0.648 0.856 326  -2.3325     1.04
 ## 
 ## postpartum_sample = 2:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  other.IMI.cow0 - other.IMI.cow1   -0.806 0.857 326    -2.49   0.8810
+##  other.IMI.cow1 - other.IMI.cow0    0.806 0.857 326  -0.8810     2.49
 ## 
 ## postpartum_sample = 3:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  other.IMI.cow0 - other.IMI.cow1   -1.238 0.881 326    -2.97   0.4961
+##  other.IMI.cow1 - other.IMI.cow0    1.238 0.881 326  -0.4961     2.97
 ## 
 ## postpartum_sample = 4:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  other.IMI.cow0 - other.IMI.cow1   -1.822 0.920 326    -3.63  -0.0112
+##  other.IMI.cow1 - other.IMI.cow0    1.822 0.920 326   0.0112     3.63
 ## 
 ## postpartum_sample = 5:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  other.IMI.cow0 - other.IMI.cow1   -1.718 0.909 326    -3.50   0.0698
+##  other.IMI.cow1 - other.IMI.cow0    1.718 0.909 326  -0.0698     3.50
 ## 
 ## postpartum_sample = 6:
 ##  contrast                        estimate    SE  df lower.CL upper.CL
-##  other.IMI.cow0 - other.IMI.cow1   -1.117 0.922 326    -2.93   0.6958
+##  other.IMI.cow1 - other.IMI.cow0    1.117 0.922 326  -0.6958     2.93
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment 
@@ -10578,7 +9332,7 @@ Confint(model_13_adj_overall)</code></pre>
 
 model_14 &lt;- lme(fixed =milk_kg~ bacillus.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_14,pairwise~bacillus.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_14,revpairwise~bacillus.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  bacillus.IMI.cow emmean   SE df lower.CL upper.CL
@@ -10616,32 +9370,32 @@ emmeans(model_14,pairwise~bacillus.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1    -1.05 0.930 328  -1.133  0.2580
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0     1.05 0.930 328   1.133  0.2580
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1    -1.75 0.936 328  -1.871  0.0622
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0     1.75 0.936 328   1.871  0.0622
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1    -1.96 0.975 328  -2.005  0.0458
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0     1.96 0.975 328   2.005  0.0458
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1    -2.29 1.000 328  -2.292  0.0226
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0     2.29 1.000 328   2.292  0.0226
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1    -2.28 1.002 328  -2.278  0.0234
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0     2.28 1.002 328   2.278  0.0234
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1    -2.50 1.012 328  -2.474  0.0139
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0     2.50 1.012 328   2.474  0.0139
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_14 &lt;- lme(fixed =milk_kg~ bacillus.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_14 &lt;- emmeans(model_14,pairwise~bacillus.IMI.cow|postpartum_sample)
+emmeans_14 &lt;- emmeans(model_14,revpairwise~bacillus.IMI.cow|postpartum_sample)
 
 emmeans_14</code></pre>
 <pre><code>## $emmeans
@@ -10682,27 +9436,27 @@ emmeans_14</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -0.794 0.935 326  -0.850  0.3962
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    0.794 0.935 326   0.850  0.3962
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -1.511 0.940 326  -1.608  0.1088
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    1.511 0.940 326   1.608  0.1088
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -1.735 0.979 326  -1.774  0.0771
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    1.735 0.979 326   1.774  0.0771
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -2.076 1.004 326  -2.069  0.0393
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.076 1.004 326   2.069  0.0393
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -2.060 1.006 326  -2.048  0.0413
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.060 1.006 326   2.048  0.0413
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate    SE  df t.ratio p.value
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -2.295 1.015 326  -2.260  0.0245
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.295 1.015 326   2.260  0.0245
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -10745,27 +9499,27 @@ emmeans_14</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                              estimate    SE  df lower.CL upper.CL
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -0.794 0.935 326    -2.63   1.0448
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    0.794 0.935 326  -1.0448     2.63
 ## 
 ## postpartum_sample = 2:
 ##  contrast                              estimate    SE  df lower.CL upper.CL
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -1.511 0.940 326    -3.36   0.3378
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    1.511 0.940 326  -0.3378     3.36
 ## 
 ## postpartum_sample = 3:
 ##  contrast                              estimate    SE  df lower.CL upper.CL
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -1.735 0.979 326    -3.66   0.1896
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    1.735 0.979 326  -0.1896     3.66
 ## 
 ## postpartum_sample = 4:
 ##  contrast                              estimate    SE  df lower.CL upper.CL
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -2.076 1.004 326    -4.05  -0.1023
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.076 1.004 326   0.1023     4.05
 ## 
 ## postpartum_sample = 5:
 ##  contrast                              estimate    SE  df lower.CL upper.CL
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -2.060 1.006 326    -4.04  -0.0814
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.060 1.006 326   0.0814     4.04
 ## 
 ## postpartum_sample = 6:
 ##  contrast                              estimate    SE  df lower.CL upper.CL
-##  bacillus.IMI.cow0 - bacillus.IMI.cow1   -2.295 1.015 326    -4.29  -0.2968
+##  bacillus.IMI.cow1 - bacillus.IMI.cow0    2.295 1.015 326   0.2968     4.29
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment 
@@ -10834,7 +9588,7 @@ Confint(model_14_adj_overall)</code></pre>
 
 model_15 &lt;- lme(fixed =milk_kg~ coryne.IMI.cow*postpartum_sample,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans(model_15,pairwise~coryne.IMI.cow|postpartum_sample)</code></pre>
+emmeans(model_15,revpairwise~coryne.IMI.cow|postpartum_sample)</code></pre>
 <pre><code>## $emmeans
 ## postpartum_sample = 1:
 ##  coryne.IMI.cow emmean   SE df lower.CL upper.CL
@@ -10872,32 +9626,32 @@ emmeans(model_15,pairwise~coryne.IMI.cow|postpartum_sample)</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1    1.725 1.10 328   1.574  0.1165
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -1.725 1.10 328  -1.574  0.1165
 ## 
 ## postpartum_sample = 2:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1    0.315 1.11 328   0.284  0.7768
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -0.315 1.11 328  -0.284  0.7768
 ## 
 ## postpartum_sample = 3:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -1.320 1.12 328  -1.175  0.2409
+##  coryne.IMI.cow1 - coryne.IMI.cow0    1.320 1.12 328   1.175  0.2409
 ## 
 ## postpartum_sample = 4:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -0.832 1.15 328  -0.722  0.4706
+##  coryne.IMI.cow1 - coryne.IMI.cow0    0.832 1.15 328   0.722  0.4706
 ## 
 ## postpartum_sample = 5:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1    0.468 1.15 328   0.407  0.6839
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -0.468 1.15 328  -0.407  0.6839
 ## 
 ## postpartum_sample = 6:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -0.229 1.20 328  -0.191  0.8483
+##  coryne.IMI.cow1 - coryne.IMI.cow0    0.229 1.20 328   0.191  0.8483
 ## 
 ## Degrees-of-freedom method: containment</code></pre>
 <pre class="r"><code>model_15 &lt;- lme(fixed =milk_kg~ coryne.IMI.cow*postpartum_sample+calving.nas+calving.sau.strep,random=~1|Site/CowId,correlation= corAR1(form = ~ps_sample),data=df.per.cow_dhi,na.action = na.omit)
 
-emmeans_15 &lt;- emmeans(model_15,pairwise~coryne.IMI.cow|postpartum_sample)
+emmeans_15 &lt;- emmeans(model_15,revpairwise~coryne.IMI.cow|postpartum_sample)
 
 emmeans_15</code></pre>
 <pre><code>## $emmeans
@@ -10938,27 +9692,27 @@ emmeans_15</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1    1.738 1.10 326   1.584  0.1142
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -1.738 1.10 326  -1.584  0.1142
 ## 
 ## postpartum_sample = 2:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1    0.308 1.11 326   0.277  0.7821
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -0.308 1.11 326  -0.277  0.7821
 ## 
 ## postpartum_sample = 3:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -1.311 1.13 326  -1.164  0.2452
+##  coryne.IMI.cow1 - coryne.IMI.cow0    1.311 1.13 326   1.164  0.2452
 ## 
 ## postpartum_sample = 4:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -0.815 1.15 326  -0.706  0.4807
+##  coryne.IMI.cow1 - coryne.IMI.cow0    0.815 1.15 326   0.706  0.4807
 ## 
 ## postpartum_sample = 5:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1    0.497 1.15 326   0.432  0.6663
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -0.497 1.15 326  -0.432  0.6663
 ## 
 ## postpartum_sample = 6:
 ##  contrast                          estimate   SE  df t.ratio p.value
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -0.210 1.20 326  -0.175  0.8612
+##  coryne.IMI.cow1 - coryne.IMI.cow0    0.210 1.20 326   0.175  0.8612
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment</code></pre>
@@ -11001,27 +9755,27 @@ emmeans_15</code></pre>
 ## $contrasts
 ## postpartum_sample = 1:
 ##  contrast                          estimate   SE  df lower.CL upper.CL
-##  coryne.IMI.cow0 - coryne.IMI.cow1    1.738 1.10 326   -0.421    3.897
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -1.738 1.10 326   -3.897    0.421
 ## 
 ## postpartum_sample = 2:
 ##  contrast                          estimate   SE  df lower.CL upper.CL
-##  coryne.IMI.cow0 - coryne.IMI.cow1    0.308 1.11 326   -1.878    2.493
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -0.308 1.11 326   -2.493    1.878
 ## 
 ## postpartum_sample = 3:
 ##  contrast                          estimate   SE  df lower.CL upper.CL
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -1.311 1.13 326   -3.525    0.904
+##  coryne.IMI.cow1 - coryne.IMI.cow0    1.311 1.13 326   -0.904    3.525
 ## 
 ## postpartum_sample = 4:
 ##  contrast                          estimate   SE  df lower.CL upper.CL
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -0.815 1.15 326   -3.087    1.456
+##  coryne.IMI.cow1 - coryne.IMI.cow0    0.815 1.15 326   -1.456    3.087
 ## 
 ## postpartum_sample = 5:
 ##  contrast                          estimate   SE  df lower.CL upper.CL
-##  coryne.IMI.cow0 - coryne.IMI.cow1    0.497 1.15 326   -1.768    2.762
+##  coryne.IMI.cow1 - coryne.IMI.cow0   -0.497 1.15 326   -2.762    1.768
 ## 
 ## postpartum_sample = 6:
 ##  contrast                          estimate   SE  df lower.CL upper.CL
-##  coryne.IMI.cow0 - coryne.IMI.cow1   -0.210 1.20 326   -2.570    2.150
+##  coryne.IMI.cow1 - coryne.IMI.cow0    0.210 1.20 326   -2.150    2.570
 ## 
 ## Results are averaged over the levels of: calving.nas, calving.sau.strep 
 ## Degrees-of-freedom method: containment 
